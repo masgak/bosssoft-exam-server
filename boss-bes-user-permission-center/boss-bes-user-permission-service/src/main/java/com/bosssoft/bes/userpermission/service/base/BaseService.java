@@ -37,7 +37,7 @@ public interface BaseService<DTO> {
      * @return
      * @throws Exception
      */
-    DTO queryByPrimaryKey(Long id) throws Exception;
+    DTO getByPrimaryKey(Long id) throws Exception;
 
     /**
      * 根据条件查询记录，当Condition为空时，返回所有

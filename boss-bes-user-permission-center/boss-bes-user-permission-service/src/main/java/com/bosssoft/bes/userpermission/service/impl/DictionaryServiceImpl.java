@@ -27,6 +27,12 @@ public class DictionaryServiceImpl implements DictionaryService {
     @Autowired
     private DataSourceTransactionManager transactionManager;
 
+    /**
+     * 新增参数
+     * @param dictionaryDTO
+     * @return
+     * @throws Exception
+     */
     public int add(DictionaryDTO dictionaryDTO) throws Exception {
         if (dictionaryDTO != null){
             //由雪花算法生成相关id
@@ -67,11 +73,28 @@ public class DictionaryServiceImpl implements DictionaryService {
     }
 
     public int update(DictionaryDTO dictionaryDTO) throws Exception {
-        return 0;
+        Long dbVersion = dictionaryDao.selectByPrimaryKey(dictionaryDTO.getId()).getVersion();
+        //对比版本号，不同则抛出异常
+//        if (!dictionaryDTO.getVersion().equals(dbVersion)){
+//            throw new Exception();
+//        }
+        Dictionary dictionary = new Dictionary();
+        dictionary.setUpdatedTime(DateUtils.getDate());
+        BeanUtils.copyProperties(dictionaryDTO,dictionary);
+        return dictionaryDao.updateByPrimaryKeySelective(dictionary);
     }
 
-    public DictionaryDTO queryByPrimaryKey(Long id) throws Exception {
-        return null;
+    /**
+     * 通过id查询
+     * @param id
+     * @return
+     * @throws Exception
+     */
+    public DictionaryDTO getByPrimaryKey(Long id) throws Exception {
+        Dictionary dictionary = dictionaryDao.selectByPrimaryKey(id);
+        DictionaryDTO dto = new DictionaryDTO();
+        BeanUtils.copyProperties(dictionary,dto);
+        return dto;
     }
 
     public List<DictionaryDTO> queryByCondition(DictionaryDTO dictionaryDTO) throws Exception {

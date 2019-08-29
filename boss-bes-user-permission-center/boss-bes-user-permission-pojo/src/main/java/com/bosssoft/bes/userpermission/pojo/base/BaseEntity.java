@@ -1,5 +1,8 @@
 package com.bosssoft.bes.userpermission.pojo.base;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
+
 import javax.persistence.Id;
 import java.util.Date;
 

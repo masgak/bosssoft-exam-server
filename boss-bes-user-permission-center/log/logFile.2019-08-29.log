@@ -941,3 +941,828 @@ java.lang.ClassCastException: java.util.ArrayList cannot be cast to com.bosssoft
 16442 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001 - registration status: 204
 315291 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 615294 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+915295 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3449 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@610f7aa: startup date [Thu Aug 29 10:25:26 CST 2019]; root of context hierarchy
+3739 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+3812 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9d3945c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+5091 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - No active profile set, falling back to default profiles: default
+5111 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3549bca9: startup date [Thu Aug 29 10:25:28 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@610f7aa
+6001 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+6021 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+6096 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+6469 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+6769 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6c931acf-1a26-3bad-b7fc-edf64947f857
+6800 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+7103 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$811f42c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+7469 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9d3945c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+8249 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+8276 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+8309 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+8309 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+8316 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\Sun\Java\bin;D:\WINDOWS\system32;D:\WINDOWS;D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\system32\config\systemprofile\.dnx\bin;D:\Program Files\Microsoft DNX\Dnvm\;D:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\WINDOWS\System32\OpenSSH\;D:\Users\masgak\Desktop\Files\python\platform-tools;D:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\python\Scripts\;C:\python\;D:\Users\masgak\AppData\Local\Microsoft\WindowsApps:D:\Users\masgak\Desktop\Files\python\platform-tools;;C:\Microsoft VS Code\bin;D:\Users\masgak\AppData\Roaming\npm;C:\Program Files (x86)\IntelliJ IDEA 2019.1.3\bin;;.]
+8583 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+8583 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3472 ms
+8865 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+8872 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+8872 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+8873 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+8873 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+9643 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+9643 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+9648 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+9649 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+9836 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3549bca9: startup date [Thu Aug 29 10:25:28 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@610f7aa
+10471 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/add],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+10473 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/update],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.DictionaryController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO>)
+10474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/dictionaries],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO> com.bosssoft.bes.userpermission.controller.DictionaryController.list() throws java.lang.Exception
+10474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/delete],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.delete1(com.bosssoft.bes.base.coredata.vo.CommonRequest<java.util.List<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>>)
+10475 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+10476 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[PUT]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+10476 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[DELETE]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+10476 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/organizations],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.OrganizationDTO> com.bosssoft.bes.userpermission.controller.OrganizationController.list() throws java.lang.Exception
+10479 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10480 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10555 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10555 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10587 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionResolver
+14079 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+14080 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+14093 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+14094 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+14095 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+14100 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+14116 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+14134 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=3549bca9,type=ConfigurationPropertiesRebinder]
+14143 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+14153 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+14161 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+14203 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+15156 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+15156 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+15283 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+15283 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+15550 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16164 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+16164 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+16164 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+16164 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+16164 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+16164 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+16164 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+16336 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+16339 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+16342 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+16347 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567045539455 with initial instances count: 3
+16373 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application boss-bes-user-permission-center with eureka with status UP
+16373 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567045539483, current=UP, previous=STARTING]
+16376 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001: registering service...
+16416 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+16427 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16448 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+16449 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 10001
+16452 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - Started BossBesUserPermissionApplication in 15.657 seconds (JVM running for 19.594)
+16853 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001 - registration status: 204
+89412 [http-nio-10001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+89412 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+89484 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+208329 [http-nio-10001-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+208923 [http-nio-10001-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+316170 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+616179 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+916183 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1216188 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1516188 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1816195 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2116196 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2416201 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2716202 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3095 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5fbe4146: startup date [Thu Aug 29 11:12:56 CST 2019]; root of context hierarchy
+3352 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+3412 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a4da85c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4525 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - No active profile set, falling back to default profiles: default
+4546 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19835e64: startup date [Thu Aug 29 11:12:58 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5fbe4146
+5277 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5290 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5348 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+5622 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+5853 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6c931acf-1a26-3bad-b7fc-edf64947f857
+5878 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+6056 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$88c082cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6269 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a4da85c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6766 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+6785 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+6810 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6810 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+6817 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\Sun\Java\bin;D:\WINDOWS\system32;D:\WINDOWS;D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\system32\config\systemprofile\.dnx\bin;D:\Program Files\Microsoft DNX\Dnvm\;D:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\WINDOWS\System32\OpenSSH\;D:\Users\masgak\Desktop\Files\python\platform-tools;D:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\python\Scripts\;C:\python\;D:\Users\masgak\AppData\Local\Microsoft\WindowsApps:D:\Users\masgak\Desktop\Files\python\platform-tools;;C:\Microsoft VS Code\bin;D:\Users\masgak\AppData\Roaming\npm;C:\Program Files (x86)\IntelliJ IDEA 2019.1.3\bin;;.]
+7066 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+7066 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2520 ms
+7368 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+7376 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+7377 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+7377 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+7377 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+8125 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+8125 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+8131 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+8131 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+8307 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8817 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19835e64: startup date [Thu Aug 29 11:12:58 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5fbe4146
+8913 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/add],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8915 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/update],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.DictionaryController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO>)
+8915 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/delete],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest<java.util.List<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>>)
+8916 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/dictionaries],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO> com.bosssoft.bes.userpermission.controller.DictionaryController.list() throws java.lang.Exception
+8917 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8917 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[PUT]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8917 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[DELETE]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8918 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/organizations],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.OrganizationDTO> com.bosssoft.bes.userpermission.controller.OrganizationController.list() throws java.lang.Exception
+8923 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+8923 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+9021 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+9021 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+9051 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionResolver
+12533 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+12535 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+12548 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+12549 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+12550 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+12554 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+12569 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+12585 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=19835e64,type=ConfigurationPropertiesRebinder]
+12595 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+12605 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+12614 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+12661 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+13507 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+13508 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+13628 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+13628 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+13910 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14493 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14493 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14494 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14494 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14494 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14494 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+14494 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14743 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14746 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+14748 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14754 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567048388346 with initial instances count: 3
+14771 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application boss-bes-user-permission-center with eureka with status UP
+14772 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567048388366, current=UP, previous=STARTING]
+14774 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001: registering service...
+14806 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+14819 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+14838 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001 - registration status: 204
+14843 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+14844 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 10001
+14846 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - Started BossBesUserPermissionApplication in 14.168 seconds (JVM running for 16.893)
+57455 [http-nio-10001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+57455 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+57496 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+57679 [http-nio-10001-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+58265 [http-nio-10001-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+314498 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2196 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@e4487af: startup date [Thu Aug 29 11:20:53 CST 2019]; root of context hierarchy
+2441 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2496 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e537a993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+3784 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - No active profile set, falling back to default profiles: default
+3813 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16ce702d: startup date [Thu Aug 29 11:20:55 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@e4487af
+4633 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+4647 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+4703 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+4976 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+5193 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6c931acf-1a26-3bad-b7fc-edf64947f857
+5219 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+5397 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c91da696] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+5632 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e537a993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6118 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+6132 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+6148 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6149 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+6154 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\Sun\Java\bin;D:\WINDOWS\system32;D:\WINDOWS;D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\system32\config\systemprofile\.dnx\bin;D:\Program Files\Microsoft DNX\Dnvm\;D:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\WINDOWS\System32\OpenSSH\;D:\Users\masgak\Desktop\Files\python\platform-tools;D:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\python\Scripts\;C:\python\;D:\Users\masgak\AppData\Local\Microsoft\WindowsApps:D:\Users\masgak\Desktop\Files\python\platform-tools;;C:\Microsoft VS Code\bin;D:\Users\masgak\AppData\Roaming\npm;C:\Program Files (x86)\IntelliJ IDEA 2019.1.3\bin;;.]
+6455 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+6455 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2642 ms
+6931 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+6938 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+6939 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+6940 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+6940 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+8054 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+8054 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+8060 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+8060 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+8350 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+9049 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16ce702d: startup date [Thu Aug 29 11:20:55 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@e4487af
+9161 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/add],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+9163 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/update],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.DictionaryController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO>)
+9163 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/delete],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest<java.util.List<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>>)
+9164 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/dictionaries],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO> com.bosssoft.bes.userpermission.controller.DictionaryController.list() throws java.lang.Exception
+9165 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+9165 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[PUT]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+9165 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[DELETE]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+9166 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/organizations],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.OrganizationDTO> com.bosssoft.bes.userpermission.controller.OrganizationController.list() throws java.lang.Exception
+9173 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+9173 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+9248 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+9248 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+9275 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionResolver
+12923 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+12928 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+12946 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+12948 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+12949 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+12952 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+12971 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+12999 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=16ce702d,type=ConfigurationPropertiesRebinder]
+13007 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+13016 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+13032 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+13086 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+14126 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+14126 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+14241 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+14241 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+14544 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15107 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+15108 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+15108 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+15108 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+15108 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+15108 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+15108 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+15267 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+15271 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+15273 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+15278 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567048866494 with initial instances count: 3
+15293 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application boss-bes-user-permission-center with eureka with status UP
+15294 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567048866512, current=UP, previous=STARTING]
+15295 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001: registering service...
+15332 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+15345 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15365 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+15366 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 10001
+15368 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - Started BossBesUserPermissionApplication in 14.773 seconds (JVM running for 17.881)
+15374 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001 - registration status: 204
+119780 [http-nio-10001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+119780 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+119818 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+119998 [http-nio-10001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+120548 [http-nio-10001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+315111 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+615113 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3013 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@707194ba: startup date [Thu Aug 29 11:33:17 CST 2019]; root of context hierarchy
+3244 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+3301 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$50c4f645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4421 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - No active profile set, falling back to default profiles: default
+4438 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Thu Aug 29 11:33:18 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@707194ba
+5161 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5175 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5231 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+5491 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+5693 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6c931acf-1a26-3bad-b7fc-edf64947f857
+5720 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+5900 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$34aaf348] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6102 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$50c4f645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6596 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+6611 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+6626 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6626 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+6633 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\Sun\Java\bin;D:\WINDOWS\system32;D:\WINDOWS;D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\system32\config\systemprofile\.dnx\bin;D:\Program Files\Microsoft DNX\Dnvm\;D:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\WINDOWS\System32\OpenSSH\;D:\Users\masgak\Desktop\Files\python\platform-tools;D:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\python\Scripts\;C:\python\;D:\Users\masgak\AppData\Local\Microsoft\WindowsApps:D:\Users\masgak\Desktop\Files\python\platform-tools;;C:\Microsoft VS Code\bin;D:\Users\masgak\AppData\Roaming\npm;C:\Program Files (x86)\IntelliJ IDEA 2019.1.3\bin;;.]
+6817 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+6818 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2380 ms
+7060 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+7066 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+7066 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+7066 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+7067 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+7811 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+7811 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+7816 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+7817 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+7998 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8538 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48e92c5c: startup date [Thu Aug 29 11:33:18 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@707194ba
+8649 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/add],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8654 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/update],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8655 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/delete],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest<java.util.List<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>>)
+8656 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/dictionaries],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO> com.bosssoft.bes.userpermission.controller.DictionaryController.list() throws java.lang.Exception
+8658 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[PUT]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8659 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[DELETE]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8660 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/organizations],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.OrganizationDTO> com.bosssoft.bes.userpermission.controller.OrganizationController.list() throws java.lang.Exception
+8667 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+8667 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+8791 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8791 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8833 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionResolver
+13165 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13167 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+13179 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+13180 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+13182 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+13186 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+13201 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+13217 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=48e92c5c,type=ConfigurationPropertiesRebinder]
+13228 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+13236 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+13245 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+13291 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+14144 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+14144 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+14267 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+14268 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+14547 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+15121 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+15121 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+15121 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+15121 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+15121 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+15121 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+15121 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+15295 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+15298 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+15301 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+15305 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567049609597 with initial instances count: 3
+15322 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application boss-bes-user-permission-center with eureka with status UP
+15322 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567049609615, current=UP, previous=STARTING]
+15324 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001: registering service...
+15361 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+15377 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15400 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+15402 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 10001
+15407 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - Started BossBesUserPermissionApplication in 14.765 seconds (JVM running for 17.525)
+15542 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001 - registration status: 204
+27252 [http-nio-10001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+27252 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+27290 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+27376 [http-nio-10001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+27874 [http-nio-10001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+52817 [http-nio-10001-exec-2] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+52870 [http-nio-10001-exec-2] INFO  o.s.j.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+315133 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+615135 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3318671 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m20s600ms622µs100ns).
+3545721 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3845726 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4145735 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4445736 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+4745744 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5045752 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5345756 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5645759 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+5945767 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+6245775 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+6545777 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+6845778 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7145780 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7445782 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7745791 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+7925922 [http-nio-10001-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `java.util.ArrayList` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.ArrayList` out of START_OBJECT token
+ at [Source: (PushbackInputStream); line: 1, column: 107] (through reference chain: com.bosssoft.bes.base.coredata.vo.CommonRequest["body"])
+7939255 [http-nio-10001-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `java.util.ArrayList` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.ArrayList` out of START_OBJECT token
+ at [Source: (PushbackInputStream); line: 1, column: 107] (through reference chain: com.bosssoft.bes.base.coredata.vo.CommonRequest["body"])
+8045797 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+8345805 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+8645808 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2787 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f8edcc5: startup date [Thu Aug 29 14:01:17 CST 2019]; root of context hierarchy
+3080 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+3134 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$938bcebf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4286 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - No active profile set, falling back to default profiles: default
+4305 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f1de2d6: startup date [Thu Aug 29 14:01:19 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5f8edcc5
+5011 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5026 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5081 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+5367 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+5698 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6c931acf-1a26-3bad-b7fc-edf64947f857
+5734 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+5978 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7771cbc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6253 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$938bcebf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6857 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+6873 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+6888 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6888 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+6893 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\Sun\Java\bin;D:\WINDOWS\system32;D:\WINDOWS;D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\system32\config\systemprofile\.dnx\bin;D:\Program Files\Microsoft DNX\Dnvm\;D:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\WINDOWS\System32\OpenSSH\;D:\Users\masgak\Desktop\Files\python\platform-tools;D:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\python\Scripts\;C:\python\;D:\Users\masgak\AppData\Local\Microsoft\WindowsApps:D:\Users\masgak\Desktop\Files\python\platform-tools;;C:\Microsoft VS Code\bin;D:\Users\masgak\AppData\Roaming\npm;C:\Program Files (x86)\IntelliJ IDEA 2019.1.3\bin;;.]
+7072 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+7072 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2767 ms
+7300 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+7308 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+7308 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+7308 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+7308 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+8022 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+8023 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+8026 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+8027 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+8193 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8698 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f1de2d6: startup date [Thu Aug 29 14:01:19 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5f8edcc5
+8800 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/add],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8803 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/update],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8804 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/delete],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest<java.util.List<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>>)
+8804 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/dictionaries],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO> com.bosssoft.bes.userpermission.controller.DictionaryController.list() throws java.lang.Exception
+8806 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8806 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[PUT]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8807 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[DELETE]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8807 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/organizations],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.OrganizationDTO> com.bosssoft.bes.userpermission.controller.OrganizationController.list() throws java.lang.Exception
+8811 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+8811 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+8892 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8893 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8938 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionResolver
+12326 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+12329 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+12342 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+12345 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+12346 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+12351 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+12369 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+12394 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=2f1de2d6,type=ConfigurationPropertiesRebinder]
+12406 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+12417 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+12425 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+12473 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+13335 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+13335 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+13449 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+13449 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+13760 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14343 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14344 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14344 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14344 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14344 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14344 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+14344 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14662 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14665 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+14668 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14673 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567058489616 with initial instances count: 3
+14690 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application boss-bes-user-permission-center with eureka with status UP
+14690 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567058489635, current=UP, previous=STARTING]
+14692 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001: registering service...
+14726 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+14741 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+14762 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+14764 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 10001
+14767 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - Started BossBesUserPermissionApplication in 14.132 seconds (JVM running for 16.92)
+15209 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001 - registration status: 204
+82538 [http-nio-10001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+82538 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+82576 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+82753 [http-nio-10001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+83236 [http-nio-10001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+314354 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+614354 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+914356 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1214362 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1514373 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1814383 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2114391 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+3093 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6db9f5a4: startup date [Thu Aug 29 14:38:11 CST 2019]; root of context hierarchy
+3329 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+3384 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2dcf94bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4510 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - No active profile set, falling back to default profiles: default
+4530 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a55299e: startup date [Thu Aug 29 14:38:12 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6db9f5a4
+5257 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5273 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5328 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+5592 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+5786 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=837ce732-d515-3b05-a80e-bd2278161a5e
+5811 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+5984 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11b591c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6198 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2dcf94bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6690 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+6705 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+6721 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6721 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+6726 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\Sun\Java\bin;D:\WINDOWS\system32;D:\WINDOWS;D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\system32\config\systemprofile\.dnx\bin;D:\Program Files\Microsoft DNX\Dnvm\;D:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\WINDOWS\System32\OpenSSH\;D:\Users\masgak\Desktop\Files\python\platform-tools;D:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\python\Scripts\;C:\python\;D:\Users\masgak\AppData\Local\Microsoft\WindowsApps:D:\Users\masgak\Desktop\Files\python\platform-tools;;C:\Microsoft VS Code\bin;D:\Users\masgak\AppData\Roaming\npm;C:\Program Files (x86)\IntelliJ IDEA 2019.1.3\bin;;.]
+6913 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+6913 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2383 ms
+7147 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+7154 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+7154 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+7154 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+7154 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+7912 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+7912 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+7918 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+7918 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+8107 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8645 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a55299e: startup date [Thu Aug 29 14:38:12 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6db9f5a4
+8741 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/add],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8744 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/update],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8746 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/delete],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest<java.util.List<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>>)
+8747 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/dictionaries],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO> com.bosssoft.bes.userpermission.controller.DictionaryController.list() throws java.lang.Exception
+8750 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8750 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[PUT]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8750 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[DELETE]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/organizations],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.OrganizationDTO> com.bosssoft.bes.userpermission.controller.OrganizationController.list() throws java.lang.Exception
+8755 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+8756 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+8862 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8862 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8903 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionResolver
+12755 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+12757 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+12768 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+12769 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+12769 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+12773 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+12787 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+12801 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6a55299e,type=ConfigurationPropertiesRebinder]
+12810 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+12819 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+12827 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+12869 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+13706 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+13706 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+13834 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+13834 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+14102 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14682 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14683 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14683 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14683 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14683 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14683 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+14683 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14897 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14901 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+14905 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14909 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567060703075 with initial instances count: 3
+14926 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application boss-bes-user-permission-center with eureka with status UP
+14927 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567060703094, current=UP, previous=STARTING]
+14929 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001: registering service...
+14964 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+14979 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15002 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+15004 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 10001
+15007 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - Started BossBesUserPermissionApplication in 14.284 seconds (JVM running for 17.249)
+15032 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001 - registration status: 204
+153844 [http-nio-10001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+153844 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+153884 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+153992 [http-nio-10001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+154453 [http-nio-10001-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+3192 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7c1e2a9e: startup date [Thu Aug 29 14:41:32 CST 2019]; root of context hierarchy
+3507 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+3569 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$de3de630] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4735 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - No active profile set, falling back to default profiles: default
+4752 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@53dbe163: startup date [Thu Aug 29 14:41:34 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7c1e2a9e
+5472 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5487 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5541 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+5825 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+6019 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=837ce732-d515-3b05-a80e-bd2278161a5e
+6047 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+6231 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c223e333] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6430 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$de3de630] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6929 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+6944 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+6960 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6960 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+6966 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\Sun\Java\bin;D:\WINDOWS\system32;D:\WINDOWS;D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\system32\config\systemprofile\.dnx\bin;D:\Program Files\Microsoft DNX\Dnvm\;D:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\WINDOWS\System32\OpenSSH\;D:\Users\masgak\Desktop\Files\python\platform-tools;D:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\python\Scripts\;C:\python\;D:\Users\masgak\AppData\Local\Microsoft\WindowsApps:D:\Users\masgak\Desktop\Files\python\platform-tools;;C:\Microsoft VS Code\bin;D:\Users\masgak\AppData\Roaming\npm;C:\Program Files (x86)\IntelliJ IDEA 2019.1.3\bin;;.]
+7150 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+7150 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2398 ms
+7397 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+7404 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+7405 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+7405 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+7405 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+8327 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+8327 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+8331 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+8332 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+8502 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+9009 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@53dbe163: startup date [Thu Aug 29 14:41:34 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7c1e2a9e
+9090 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/add],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+9092 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/update],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+9092 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/delete],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest<java.util.List<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>>)
+9093 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/dictionaries],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO> com.bosssoft.bes.userpermission.controller.DictionaryController.list() throws java.lang.Exception
+9095 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+9095 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[PUT]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+9096 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[DELETE]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+9096 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/organizations],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.OrganizationDTO> com.bosssoft.bes.userpermission.controller.OrganizationController.list() throws java.lang.Exception
+9100 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+9101 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+9187 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+9187 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+9233 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionResolver
+12687 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+12689 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+12701 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+12703 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+12703 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+12707 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+12722 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+12738 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=53dbe163,type=ConfigurationPropertiesRebinder]
+12749 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+12758 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+12767 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+12811 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+13649 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+13650 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+13770 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+13770 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+14023 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14598 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14598 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14598 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14598 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14598 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14598 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+14598 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14769 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14775 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+14778 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14783 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567060904360 with initial instances count: 3
+14801 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application boss-bes-user-permission-center with eureka with status UP
+14801 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567060904380, current=UP, previous=STARTING]
+14804 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001: registering service...
+14835 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+14850 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+14859 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001 - registration status: 204
+14874 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+14876 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 10001
+14878 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - Started BossBesUserPermissionApplication in 14.133 seconds (JVM running for 17.261)
+65921 [http-nio-10001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+65921 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+65959 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+66071 [http-nio-10001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+66533 [http-nio-10001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2818 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5c671d7f: startup date [Thu Aug 29 14:44:40 CST 2019]; root of context hierarchy
+3064 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+3119 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c991d0e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4272 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - No active profile set, falling back to default profiles: default
+4290 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1fde5d22: startup date [Thu Aug 29 14:44:41 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5c671d7f
+4990 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5006 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5061 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+5329 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+5535 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=837ce732-d515-3b05-a80e-bd2278161a5e
+5566 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+5734 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ad77cdeb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+5933 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c991d0e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6405 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+6418 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+6433 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6433 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+6439 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\Sun\Java\bin;D:\WINDOWS\system32;D:\WINDOWS;D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\system32\config\systemprofile\.dnx\bin;D:\Program Files\Microsoft DNX\Dnvm\;D:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\WINDOWS\System32\OpenSSH\;D:\Users\masgak\Desktop\Files\python\platform-tools;D:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\python\Scripts\;C:\python\;D:\Users\masgak\AppData\Local\Microsoft\WindowsApps:D:\Users\masgak\Desktop\Files\python\platform-tools;;C:\Microsoft VS Code\bin;D:\Users\masgak\AppData\Roaming\npm;C:\Program Files (x86)\IntelliJ IDEA 2019.1.3\bin;;.]
+6620 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+6620 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2330 ms
+6845 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+6853 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+6854 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+6854 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+6854 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+7568 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+7569 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+7574 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+7574 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+7741 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8263 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1fde5d22: startup date [Thu Aug 29 14:44:41 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5c671d7f
+8340 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/add],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8342 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/update],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8342 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/delete],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest<java.util.List<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>>)
+8343 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/dictionaries],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO> com.bosssoft.bes.userpermission.controller.DictionaryController.list() throws java.lang.Exception
+8345 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8345 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[PUT]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8346 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[DELETE]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8346 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/organizations],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.OrganizationDTO> com.bosssoft.bes.userpermission.controller.OrganizationController.list() throws java.lang.Exception
+8349 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+8349 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+8435 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8435 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8467 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionResolver
+11832 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+11834 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+11845 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+11847 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+11847 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+11852 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+11867 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+11882 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1fde5d22,type=ConfigurationPropertiesRebinder]
+11889 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+11898 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+11906 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+11948 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+12779 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+12780 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+12900 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+12900 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+13193 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13760 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+13760 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+13760 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+13760 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+13760 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+13761 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+13761 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+13917 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+13920 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+13923 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+13927 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567061091123 with initial instances count: 3
+13944 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application boss-bes-user-permission-center with eureka with status UP
+13944 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567061091141, current=UP, previous=STARTING]
+13946 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001: registering service...
+13984 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+14000 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+14021 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+14022 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 10001
+14025 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - Started BossBesUserPermissionApplication in 13.286 seconds (JVM running for 16.144)
+14203 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001 - registration status: 204
+27789 [http-nio-10001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+27789 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+27826 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+27921 [http-nio-10001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+28377 [http-nio-10001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2748 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@683dbc2c: startup date [Thu Aug 29 14:46:16 CST 2019]; root of context hierarchy
+2999 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+3053 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$283fe492] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4186 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - No active profile set, falling back to default profiles: default
+4204 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@403f0a22: startup date [Thu Aug 29 14:46:17 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@683dbc2c
+4986 [main] WARN  t.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5000 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.bosssoft.bes.userpermission]' package. Please check your configuration.
+5057 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+5326 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+5513 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=837ce732-d515-3b05-a80e-bd2278161a5e
+5540 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+5705 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c25e195] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+5907 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$283fe492] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+6385 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+6400 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+6415 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+6415 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+6421 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\Sun\Java\bin;D:\WINDOWS\system32;D:\WINDOWS;D:\Program Files\Java\jdk1.8.0_201\bin;D:\WINDOWS\system32\config\systemprofile\.dnx\bin;D:\Program Files\Microsoft DNX\Dnvm\;D:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;D:\WINDOWS\system32;D:\WINDOWS;D:\WINDOWS\System32\Wbem;D:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\WINDOWS\System32\OpenSSH\;D:\Users\masgak\Desktop\Files\python\platform-tools;D:\Program Files\Java\apache-maven-3.5.4\bin;C:\Program Files (x86)\nodejs\;D:\Program Files\TortoiseSVN\bin;C:\python\Scripts\;C:\python\;D:\Users\masgak\AppData\Local\Microsoft\WindowsApps:D:\Users\masgak\Desktop\Files\python\platform-tools;;C:\Microsoft VS Code\bin;D:\Users\masgak\AppData\Roaming\npm;C:\Program Files (x86)\IntelliJ IDEA 2019.1.3\bin;;.]
+6602 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+6602 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2398 ms
+6829 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+6835 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+6836 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+6836 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+6836 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+7535 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+7535 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+7539 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+7539 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+7708 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8216 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@403f0a22: startup date [Thu Aug 29 14:46:17 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@683dbc2c
+8317 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/add],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8319 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/update],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>)
+8319 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/delete],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse<java.lang.String> com.bosssoft.bes.userpermission.controller.DictionaryController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest<java.util.List<com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO>>)
+8320 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/dictionaries],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO> com.bosssoft.bes.userpermission.controller.DictionaryController.list() throws java.lang.Exception
+8321 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[POST]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.add(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8321 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[PUT]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.update(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8322 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/organization],methods=[DELETE]}" onto public com.bosssoft.bes.base.coredata.vo.CommonResponse com.bosssoft.bes.userpermission.controller.OrganizationController.delete(com.bosssoft.bes.base.coredata.vo.CommonRequest)
+8322 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/api/organizations],methods=[GET]}" onto public java.util.List<com.bosssoft.bes.userpermission.pojo.dto.OrganizationDTO> com.bosssoft.bes.userpermission.controller.OrganizationController.list() throws java.lang.Exception
+8325 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+8326 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+8404 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8405 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+8433 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionResolver
+11784 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+11786 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+11797 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+11799 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+11799 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+11803 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+11817 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+11832 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=403f0a22,type=ConfigurationPropertiesRebinder]
+11840 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+11848 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+11857 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+11909 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+12747 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+12747 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+12881 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+12881 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+13176 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+13747 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+13747 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+13747 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+13747 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+13747 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+13747 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+13747 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+13913 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+13917 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+13919 [main] INFO  c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+13924 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567061187299 with initial instances count: 3
+13940 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application boss-bes-user-permission-center with eureka with status UP
+13940 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567061187317, current=UP, previous=STARTING]
+13942 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001: registering service...
+13981 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+13995 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+14016 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+14018 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 10001
+14020 [main] INFO  c.b.b.u.BossBesUserPermissionApplication - Started BossBesUserPermissionApplication in 13.316 seconds (JVM running for 16.201)
+14491 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BOSS-BES-USER-PERMISSION-CENTER/DESKTOP-SENA7C2:boss-bes-user-permission-center:10001 - registration status: 204
+35714 [http-nio-10001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+35714 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+35751 [http-nio-10001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+35850 [http-nio-10001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+36301 [http-nio-10001-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+313750 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+613754 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+913757 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+1213760 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

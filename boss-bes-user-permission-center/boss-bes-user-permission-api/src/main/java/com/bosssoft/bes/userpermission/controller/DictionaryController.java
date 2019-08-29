@@ -3,17 +3,16 @@ package com.bosssoft.bes.userpermission.controller;
 import com.bosssoft.bes.base.coredata.vo.CommonResponse;
 import com.bosssoft.bes.base.coredata.vo.CommonRequest;
 import com.bosssoft.bes.base.coredata.vo.ResponseHead;
-import com.bosssoft.bes.base.utils.JsonUtils;
 
 import com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO;
 import com.bosssoft.bes.userpermission.pojo.entity.Dictionary;
 import com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO;
 import com.bosssoft.bes.userpermission.service.DictionaryService;
-import com.google.gson.Gson;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -24,31 +23,31 @@ public class DictionaryController{
 
     @CrossOrigin
     @PostMapping("api/delete")
-    public CommonResponse<String> delete1(@RequestBody CommonRequest<List<DictionaryDataItemVO>> commonRequest  ) {
-        List<DictionaryDTO> dictionaryDTOS = JsonUtils.jsonToList(commonRequest.getBody().toString(),DictionaryDTO.class);
-        if (commonRequest.getBody() != null){
-            try {
-                dictionaryService.delete(dictionaryDTOS);
-                return null;
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-//            DictionaryDataItemVO dictionaryDataItemVO = (DictionaryDataItemVO)commonRequest.getBody();
-//            DictionaryDTO dictionaryDTO = new DictionaryDTO();
-//            BeanUtils.copyProperties(dictionaryDataItemVO, dictionaryDTO);
-//            System.out.println("获得的数据为"+dictionaryDTO);
-//            try {
-//                return null;
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-        }
+    public CommonResponse<String> delete(@RequestBody CommonRequest<List<DictionaryDataItemVO>> commonRequest  ) {
+        //返回前端的CommonResponse
         CommonResponse<String> response = new CommonResponse<>();
+        //返回前端的ResponseHead
         ResponseHead head = new ResponseHead();
         head.setEncryption(0);
-        head.setCode("0");
+        //将前端传的数据转为list
+        List<DictionaryDataItemVO> voList = commonRequest.getBody();
+        //前端传输的数据不为空则调用service层
+        if (voList != null && voList.size()> 0){
+            List<DictionaryDTO> dtoList = new ArrayList<>(voList.size());
+            DictionaryDTO dictionaryDTO = null;
+            for (DictionaryDataItemVO vo:voList){
+                dictionaryDTO = new DictionaryDTO();
+                BeanUtils.copyProperties(vo,dictionaryDTO);
+                dtoList.add(dictionaryDTO);
+            }
+            try {
+                dictionaryService.delete(dtoList);
+                head.setCode("0");
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
         response.setResponseHead(head);
-        response.setBody("33333333");
         return response;
     }
 
@@ -61,7 +60,7 @@ public class DictionaryController{
         ResponseHead head = new ResponseHead();
         //前端传输的数据不为空则调用service层
         if (commonRequest.getBody() != null){
-            DictionaryDataItemVO dictionaryDataItemVO = (DictionaryDataItemVO)commonRequest.getBody();
+            DictionaryDataItemVO dictionaryDataItemVO = commonRequest.getBody();
             System.out.println("状态为"+dictionaryDataItemVO.getStatus());
             DictionaryDTO dictionaryDTO = new DictionaryDTO();
             BeanUtils.copyProperties(dictionaryDataItemVO, dictionaryDTO);
@@ -81,16 +80,18 @@ public class DictionaryController{
 
     @CrossOrigin
     @PostMapping("api/update")
-    public CommonResponse update(CommonRequest<DictionaryDTO> commonRequest) {
+    public CommonResponse<String> update(@RequestBody CommonRequest<DictionaryDataItemVO> commonRequest) {
         //返回前端的CommonResponse
         CommonResponse<String> response = new CommonResponse<>();
         //返回前端的ResponseHead
         ResponseHead head = new ResponseHead();
         //前端传输的数据不为空则调用service层
+        System.out.println("接收数据"+commonRequest.getBody());
         if (commonRequest.getBody() != null){
-            DictionaryDataItemVO dictionaryDataItemVO = (DictionaryDataItemVO)commonRequest.getBody();
+            DictionaryDataItemVO dictionaryDataItemVO = commonRequest.getBody();
             DictionaryDTO dictionaryDTO = new DictionaryDTO();
             BeanUtils.copyProperties(dictionaryDataItemVO, dictionaryDTO);
+            System.out.println("DTO为"+dictionaryDTO);
             try {
                 dictionaryService.update(dictionaryDTO);
                 head.setEncryption(0);
