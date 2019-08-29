@@ -485,7 +485,7 @@
       </method>
     </configuration>
     <configuration name="BossBesUserPermissionApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="boss-bes-user-permission-controller" />
+      <module name="boss-bes-user-permission-api" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bosssoft.bes.userpermission.*" />
