@@ -1,0 +1,5 @@
+DataItemVO 用于传入数据库的数据(先前的InsertUpdateVO与DeleteVO结合)
+    基本要素：id,entity的数值(不含五个公共字段)
+DataListVO 用于传出查询结果(先前的QueryVO)
+    基本要素：id,entity和外表数值
+QueryConditionVO 用于传入查询条件

@@ -1,0 +1,99 @@
+package com.bosssoft.bes.userpermission.service.impl;
+
+import com.bosssoft.bes.base.utils.DateUtils;
+import com.bosssoft.bes.base.utils.SnowFlake;
+import com.bosssoft.bes.userpermission.dao.DictionaryDao;
+import com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO;
+import com.bosssoft.bes.userpermission.pojo.entity.Dictionary;
+import com.bosssoft.bes.userpermission.service.DictionaryService;
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
+import tk.mybatis.mapper.entity.Condition;
+import tk.mybatis.mapper.entity.Example;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+@Service
+public class DictionaryServiceImpl implements DictionaryService {
+
+    @Autowired
+    DictionaryDao dictionaryDao;
+
+    @Autowired
+    private DataSourceTransactionManager transactionManager;
+
+    public int add(DictionaryDTO dictionaryDTO) throws Exception {
+        if (dictionaryDTO != null){
+            //由雪花算法生成相关id
+            SnowFlake snowFlake = new SnowFlake(2,3);
+            dictionaryDTO.setId(snowFlake.nextId());
+            //插入生成时间以及更新时间，第一次创建时两者相同
+            Date createTime = DateUtils.getDate();
+            Date updateTime = createTime;
+            dictionaryDTO.setCreatedTime(createTime);
+            dictionaryDTO.setUpdatedTime(updateTime);
+            //插入创建者以及更新者，后续从redis中获取登录信息
+            dictionaryDTO.setCreatedBy((long)9527);
+            dictionaryDTO.setUpdatedBy((long)9527);
+            //插入当前版本
+            dictionaryDTO.setVersion((long)1.0);
+            try {
+                dictionaryDao.insert(dictionaryDTO);
+                return 1;
+            }catch (Exception e){
+                e.printStackTrace();
+                return 0;
+            }
+        }else {
+            return 0;
+        }
+    }
+
+    public int delete(List<DictionaryDTO> dictionaryDTOS) throws Exception {
+        DictionaryDTO dictionaryDTO = new DictionaryDTO();
+        if (dictionaryDTOS != null){
+            for(DictionaryDTO attribute : dictionaryDTOS) {
+                dictionaryDTO = attribute;
+                System.out.println("删除的参数为"+dictionaryDTO);
+                dictionaryDao.delete(dictionaryDTO);
+            }
+        }
+        return 0;
+    }
+
+    public int update(DictionaryDTO dictionaryDTO) throws Exception {
+        return 0;
+    }
+
+    public DictionaryDTO queryByPrimaryKey(Long id) throws Exception {
+        return null;
+    }
+
+    public List<DictionaryDTO> queryByCondition(DictionaryDTO dictionaryDTO) throws Exception {
+        Condition condition = new Condition(Dictionary.class);
+        Example.Criteria criteria = condition.createCriteria();
+        if (!StringUtils.isEmpty(dictionaryDTO.getName())){
+            criteria.andLike("name","%"+dictionaryDTO.getName()+"%");
+        }
+        List<Dictionary> results = dictionaryDao.selectByExample(condition);
+        List<DictionaryDTO> dtos = null;
+        DictionaryDTO dto = null;
+        if (results != null) {
+            dtos = new ArrayList<DictionaryDTO>(results.size());
+            for (Dictionary result : results){
+                //此处new的做法有待商讨……
+                dto = new DictionaryDTO();
+                BeanUtils.copyProperties(result, dto);
+                dtos.add(dto);
+            }
+        } else {
+            dtos = new ArrayList<DictionaryDTO>();
+        }
+        return dtos;
+    }
+}

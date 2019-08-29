@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/
+server:
+  port: 10003
+spring:
+  application:
+    name: boss-bes-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: limit_route
+          uri: http://47.102.192.50:8081 # http://47.102.192.50:8081  #  lb://consumer-service lb 代表从注册中心获取服务，且已负载均衡方式转发
+          predicates:
+            - Path=/**/** #只漏油转发
+          filters:
+            - name: RequestRateLimiter #名称必须是RequestRateLimiter
+              args:
+                key-resolver: "#{@ipResolver}"  #使用SpEL按名称引用bean
+                redis-rate-limiter.replenishRate: 2 #允许用户每秒处理多少个请求
+                redis-rate-limiter.burstCapacity: 3 #令牌桶的容量，允许在一秒钟内完成的最大请求数
+            - name: Hystrix #名称必须是RequestRateLimiter
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/defaultfallback
