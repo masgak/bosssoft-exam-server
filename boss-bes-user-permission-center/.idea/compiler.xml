@@ -6,10 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="boss-bes-user-permission-pojo" />
-        <module name="boss-bes-user-permission-service" />
         <module name="boss-bes-user-permission-api" />
+        <module name="boss-bes-user-permission-controller" />
+        <module name="boss-bes-user-permission-pojo" />
         <module name="boss-bes-user-permission-dao" />
+        <module name="boss-bes-user-permission-service" />
         <module name="boss-bes-user-permission-utils" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="boss-bes-user-permission-api" options="-parameters" />
+      <module name="boss-bes-user-permission-controller" options="-parameters" />
       <module name="boss-bes-user-permission-eureka" options="-parameters" />
     </option>
   </component>

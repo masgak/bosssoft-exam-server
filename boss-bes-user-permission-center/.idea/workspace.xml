@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9bf125b-ee12-47c1-8e11-136c4fad5aad" name="Default Changelist" comment="" />
+    <list default="true" id="e9bf125b-ee12-47c1-8e11-136c4fad5aad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/DictionaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boss-bes-user-permission-center.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logFile.2019-08-29.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/logFile.2019-08-29.log" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/boss-bes-user-permission-eureka/target/" />
@@ -38,31 +44,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-dao/src/main/java/com/bosssoft/bes/userpermission/dao/DictionaryDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/base/BaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="567">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/DictionaryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+            <state relative-caret-position="151">
+              <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-dao/src/main/java/com/bosssoft/bes/userpermission/dao/OrganizationDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="189">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -82,20 +76,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/OrganizationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+            <state relative-caret-position="483">
+              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#1111#1112#0" expanded="true" />
-                <element signature="e#1263#1264#0" expanded="true" />
-                <element signature="e#1290#1291#0" expanded="true" />
-                <element signature="e#1380#1381#0" expanded="true" />
-                <element signature="e#1407#1408#0" expanded="true" />
-                <element signature="e#1496#1497#0" expanded="true" />
-                <element signature="e#1523#1524#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-pojo/src/main/java/com/bosssoft/bes/userpermission/pojo/dto/OrganizationDTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
-              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -114,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/OrganizationService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -122,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/DictionaryService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,11 +115,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/impl/DictionaryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+            <state relative-caret-position="21">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/BossBesUserPermissionApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -144,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/impl/OrganizationServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1449">
-              <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+              <caret line="86" column="30" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -259,8 +255,8 @@
         <option value="$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/base/BaseController.java" />
         <option value="$PROJECT_DIR$/boss-bes-user-permission-pojo/src/main/java/com/bosssoft/bes/userpermission/pojo/dto/OrganizationDTO.java" />
         <option value="$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/OrganizationController.java" />
-        <option value="$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/DictionaryController.java" />
         <option value="$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/impl/DictionaryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/DictionaryController.java" />
       </list>
     </option>
   </component>
@@ -354,119 +350,6 @@
             <path>
               <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
               <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
               <item name="boss-bes-user-permission-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -489,24 +372,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
@@ -516,11 +381,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boss-bes-user-permission-center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boss-bes-user-permission-center" type="462c0819:PsiDirectoryNode" />
-              <item name="boss-bes-user-permission-utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -541,7 +401,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -578,23 +438,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BossBesUserPermissionApplication">
-    <configuration name="DbTest.dbtest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="boss-bes-user-permission-dao" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bosssoft.bes.userpermission.dao.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bosssoft.bes.userpermission.dao.test" />
-      <option name="MAIN_CLASS_NAME" value="com.bosssoft.bes.userpermission.dao.test.DbTest" />
-      <option name="METHOD_NAME" value="dbtest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.BossBesUserPermissionApplication (2)">
     <configuration name="DbTest.dbtest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="boss-bes-user-permission-api" />
       <extension name="coverage">
@@ -640,6 +484,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BossBesUserPermissionApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="boss-bes-user-permission-controller" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bosssoft.bes.userpermission.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bosssoft.bes.userpermission.BossBesUserPermissionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BossBesUserPermissionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="boss-bes-user-permission-api" />
       <extension name="coverage">
@@ -655,11 +512,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.BossBesUserPermissionApplication (2)" />
         <item itemvalue="Spring Boot.BossBesUserPermissionApplication" />
         <item itemvalue="Spring Boot.BossBesUserPermissionApplication (1)" />
         <item itemvalue="JUnit.DbTest.dbtest1" />
         <item itemvalue="JUnit.DbTest.test" />
-        <item itemvalue="JUnit.DbTest.dbtest" />
       </list>
     </recent_temporary>
   </component>
@@ -709,6 +566,7 @@
       <workItem from="1566787127575" duration="21506000" />
       <workItem from="1566972999287" duration="4052000" />
       <workItem from="1566977093248" duration="23780000" />
+      <workItem from="1567044381468" duration="900000" />
     </task>
     <servers />
   </component>
@@ -745,13 +603,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189372000" />
+    <option name="totallyTimeSpent" value="190272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37367624" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3797277" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -775,7 +633,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49848714" visible="true" weight="0.41467577" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49848714" visible="true" weight="0.4129693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1016,10 +874,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/base/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/base/BaseController.java" />
+    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-dao/src/main/java/com/bosssoft/bes/userpermission/dao/DictionaryDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="84">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/base/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-dao/src/main/java/com/bosssoft/bes/userpermission/dao/OrganizationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/OrganizationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-pojo/src/main/java/com/bosssoft/bes/userpermission/pojo/dto/OrganizationDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/OrganizationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/DictionaryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/impl/OrganizationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="86" column="30" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/impl/DictionaryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1028,100 +952,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/BossBesUserPermissionApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-dao/src/main/java/com/bosssoft/bes/userpermission/dao/DictionaryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-dao/src/main/java/com/bosssoft/bes/userpermission/dao/OrganizationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-pojo/src/main/java/com/bosssoft/bes/userpermission/pojo/dto/OrganizationDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="84">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/DictionaryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+        <state relative-caret-position="151">
+          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-api/src/main/java/com/bosssoft/bes/userpermission/controller/OrganizationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1496#1497#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/impl/OrganizationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="86" column="30" lean-forward="true" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/DictionaryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/OrganizationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/base/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boss-bes-user-permission-service/src/main/java/com/bosssoft/bes/userpermission/service/impl/DictionaryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
         </state>
       </provider>
     </entry>

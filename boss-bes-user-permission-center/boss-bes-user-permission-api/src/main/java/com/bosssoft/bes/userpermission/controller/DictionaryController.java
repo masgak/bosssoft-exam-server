@@ -23,32 +23,7 @@ public class DictionaryController{
     private DictionaryService dictionaryService;
 
     @CrossOrigin
-    @PostMapping("api/add")
-    public CommonResponse add(@RequestBody CommonRequest commonRequest) {
-        System.out.println("接收数据为"+commonRequest.getBody().toString());
-//        Gson gson = new Gson();
-//        DictionaryDataItemVO dictionaryDataItemVO = new DictionaryDataItemVO();
-//        dictionaryDataItemVO.setId((long) 555);
-//        dictionaryDataItemVO = gson.fromJson((String) commonRequest.getBody(),DictionaryDataItemVO.class);
-//        DictionaryDTO dictionaryDTO = new DictionaryDTO();
-//        BeanUtils.copyProperties(dictionaryDataItemVO, dictionaryDTO);
-//        System.out.println(dictionaryDTO.toString());
-//        try {
-//            dictionaryService.add(dictionaryDTO);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-        return null;
-    }
-
-    @CrossOrigin
     @PostMapping("api/delete")
-    public CommonResponse delete(CommonRequest commonRequest) {
-        return null;
-    }
-
-    @CrossOrigin
-    @PostMapping("api/delete1")
     public CommonResponse<String> delete1(@RequestBody CommonRequest<List<DictionaryDataItemVO>> commonRequest  ) {
         List<DictionaryDTO> dictionaryDTOS = JsonUtils.jsonToList(commonRequest.getBody().toString(),DictionaryDTO.class);
         if (commonRequest.getBody() != null){
@@ -78,8 +53,8 @@ public class DictionaryController{
     }
 
     @CrossOrigin
-    @PostMapping("api/add1")
-    public CommonResponse<String> add1(@RequestBody CommonRequest<DictionaryDataItemVO> commonRequest  ) {
+    @PostMapping("api/add")
+    public CommonResponse<String> add(@RequestBody CommonRequest<DictionaryDataItemVO> commonRequest  ) {
         //返回前端的CommonResponse
         CommonResponse<String> response = new CommonResponse<>();
         //返回前端的ResponseHead
