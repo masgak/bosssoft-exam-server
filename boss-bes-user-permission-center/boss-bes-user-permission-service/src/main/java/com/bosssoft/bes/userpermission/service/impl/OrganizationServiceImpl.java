@@ -98,4 +98,15 @@ public class OrganizationServiceImpl implements OrganizationService {
         return dtos;
     }
 
+    public OrganizationDTO getByPrimaryKey(Long id) throws Exception {
+        return null;
+    }
+
+    public List<OrganizationDTO> queryAll(OrganizationDTO organizationDTO) throws Exception {
+        return null;
+    }
+
+    public List<OrganizationDTO> queryAll() throws Exception {
+        return null;
+    }
 }

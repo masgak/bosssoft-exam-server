@@ -8,6 +8,7 @@ import com.bosssoft.bes.userpermission.pojo.entity.Dictionary;
 import com.bosssoft.bes.userpermission.service.DictionaryService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -117,6 +118,22 @@ public class DictionaryServiceImpl implements DictionaryService {
         } else {
             dtos = new ArrayList<DictionaryDTO>();
         }
+        return dtos;
+    }
+
+    public List<DictionaryDTO> queryAll() throws Exception {
+        List<DictionaryDTO> dtos = null;
+        List<Dictionary> dictionaries = dictionaryDao.selectAll();
+        DictionaryDTO dto = null;
+        if (dictionaries != null){
+            dtos = new ArrayList<DictionaryDTO>(dictionaries.size());
+            for (Dictionary dictionary:dictionaries){
+                dto = new DictionaryDTO();
+                BeanUtils.copyProperties(dictionary,dto);
+                dtos.add(dto);
+            }
+        }
+        System.out.println("返回的dto是"+dictionaries.toString());
         return dtos;
     }
 }

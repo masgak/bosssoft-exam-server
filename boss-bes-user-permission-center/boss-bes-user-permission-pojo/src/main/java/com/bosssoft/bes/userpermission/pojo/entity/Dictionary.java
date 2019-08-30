@@ -1,5 +1,6 @@
 package com.bosssoft.bes.userpermission.pojo.entity;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.bosssoft.bes.userpermission.pojo.base.BaseEntity;
 import org.springframework.stereotype.Repository;
 
@@ -15,14 +16,17 @@ public class Dictionary extends BaseEntity implements Serializable {
     /**
      * 数据字典名称
      */
+    @Excel(name = "字典名称",width = 15)
     protected String name;
     /**
      * 数据字典类别
      */
+    @Excel(name = "字典类别",width = 15)
     protected String category;
     /**
      * 数据字典值
      */
+    @Excel(name = "字典值",width = 15)
     protected String value;
     /**
      * 状态位
@@ -31,6 +35,7 @@ public class Dictionary extends BaseEntity implements Serializable {
     /**
      * 备注
      */
+    @Excel(name = "备注",width = 15)
     protected String remark;
 
     public String getName() {

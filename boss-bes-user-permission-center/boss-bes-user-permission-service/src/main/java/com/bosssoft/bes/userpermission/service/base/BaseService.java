@@ -47,4 +47,10 @@ public interface BaseService<DTO> {
      */
     List<DTO> queryByCondition(DTO dto) throws Exception;
 
+    /**
+     * 查询所有
+     * @return
+     * @throws Exception
+     */
+    List<DTO> queryAll() throws Exception;
 }

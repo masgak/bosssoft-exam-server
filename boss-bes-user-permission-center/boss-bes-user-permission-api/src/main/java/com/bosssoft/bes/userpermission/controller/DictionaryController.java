@@ -4,6 +4,7 @@ import com.bosssoft.bes.base.coredata.vo.CommonResponse;
 import com.bosssoft.bes.base.coredata.vo.CommonRequest;
 import com.bosssoft.bes.base.coredata.vo.ResponseHead;
 
+import com.bosssoft.bes.base.utils.FileUtils;
 import com.bosssoft.bes.userpermission.pojo.dto.DictionaryDTO;
 import com.bosssoft.bes.userpermission.pojo.entity.Dictionary;
 import com.bosssoft.bes.userpermission.pojo.vo.DictionaryDataItemVO;
@@ -12,6 +13,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -119,4 +121,17 @@ public class DictionaryController{
         DictionaryDTO dto = new DictionaryDTO();
         return  dictionaryService.queryByCondition(dto);
     }
+
+    @CrossOrigin
+    @GetMapping("/api/execel")
+    public void export(HttpServletResponse response){
+        try {
+            List<DictionaryDTO> dto = dictionaryService.queryAll();
+            FileUtils.exportExcel(dto,"数据字典表","导出",Dictionary.class,
+                    "数据字典.xls",response);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }
