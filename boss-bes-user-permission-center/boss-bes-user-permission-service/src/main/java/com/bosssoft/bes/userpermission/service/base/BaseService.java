@@ -11,9 +11,9 @@ public interface BaseService<DTO> {
      * 增加记录
      * @param dto
      * @return
-     * @throws Exception
+     * @throws
      */
-    int add(DTO dto) throws Exception;
+    int add(DTO dto) ;
 
     /**
      * 根据删除记录
@@ -21,7 +21,7 @@ public interface BaseService<DTO> {
      * @return
      * @throws Exception
      */
-    int delete(List<DTO> dtos) throws Exception;
+    int delete(List<DTO> dtos);
 
     /**
      * 更新记录
@@ -29,7 +29,7 @@ public interface BaseService<DTO> {
      * @return
      * @throws Exception
      */
-    int update(DTO dto) throws Exception;
+    int update(DTO dto) ;
 
     /**
      * 根据主键查询记录
@@ -37,7 +37,7 @@ public interface BaseService<DTO> {
      * @return
      * @throws Exception
      */
-    DTO getByPrimaryKey(Long id) throws Exception;
+    DTO getByPrimaryKey(Long id) ;
 
     /**
      * 根据条件查询记录，当Condition为空时，返回所有
@@ -45,12 +45,12 @@ public interface BaseService<DTO> {
      * @return
      * @throws Exception
      */
-    List<DTO> queryByCondition(DTO dto) throws Exception;
+    List<DTO> queryByCondition(DTO dto) ;
 
     /**
      * 查询所有
      * @return
      * @throws Exception
      */
-    List<DTO> queryAll() throws Exception;
+    List<DTO> queryAll() ;
 }

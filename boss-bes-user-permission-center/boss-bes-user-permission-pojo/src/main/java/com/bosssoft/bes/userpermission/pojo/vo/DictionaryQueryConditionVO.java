@@ -11,6 +11,10 @@ public class DictionaryQueryConditionVO extends QueryConditionVO {
      * 数据字典类别
      */
     protected String category;
+    /**
+     * 启用标记
+     */
+    protected Byte status;
 
     public String getName() {
         return name;
@@ -26,5 +30,22 @@ public class DictionaryQueryConditionVO extends QueryConditionVO {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public Byte getStatus() {
+        return status;
+    }
+
+    public void setStatus(Byte status) {
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "DictionaryQueryConditionVO{" +
+                "name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                ", status=" + status +
+                '}';
     }
 }

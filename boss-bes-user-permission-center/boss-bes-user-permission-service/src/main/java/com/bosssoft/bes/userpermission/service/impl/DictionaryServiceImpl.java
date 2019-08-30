@@ -34,7 +34,7 @@ public class DictionaryServiceImpl implements DictionaryService {
      * @return
      * @throws Exception
      */
-    public int add(DictionaryDTO dictionaryDTO) throws Exception {
+    public int add(DictionaryDTO dictionaryDTO)  {
         if (dictionaryDTO != null){
             //由雪花算法生成相关id
             SnowFlake snowFlake = new SnowFlake(2,3);
@@ -61,7 +61,7 @@ public class DictionaryServiceImpl implements DictionaryService {
         }
     }
 
-    public int delete(List<DictionaryDTO> dictionaryDTOS) throws Exception {
+    public int delete(List<DictionaryDTO> dictionaryDTOS)  {
         DictionaryDTO dictionaryDTO = new DictionaryDTO();
         if (dictionaryDTOS != null){
             for(DictionaryDTO attribute : dictionaryDTOS) {
@@ -73,7 +73,7 @@ public class DictionaryServiceImpl implements DictionaryService {
         return 0;
     }
 
-    public int update(DictionaryDTO dictionaryDTO) throws Exception {
+    public int update(DictionaryDTO dictionaryDTO)  {
         Long dbVersion = dictionaryDao.selectByPrimaryKey(dictionaryDTO.getId()).getVersion();
         //对比版本号，不同则抛出异常
 //        if (!dictionaryDTO.getVersion().equals(dbVersion)){
@@ -91,14 +91,14 @@ public class DictionaryServiceImpl implements DictionaryService {
      * @return
      * @throws Exception
      */
-    public DictionaryDTO getByPrimaryKey(Long id) throws Exception {
+    public DictionaryDTO getByPrimaryKey(Long id)  {
         Dictionary dictionary = dictionaryDao.selectByPrimaryKey(id);
         DictionaryDTO dto = new DictionaryDTO();
         BeanUtils.copyProperties(dictionary,dto);
         return dto;
     }
 
-    public List<DictionaryDTO> queryByCondition(DictionaryDTO dictionaryDTO) throws Exception {
+    public List<DictionaryDTO> queryByCondition(DictionaryDTO dictionaryDTO)  {
         Condition condition = new Condition(Dictionary.class);
         Example.Criteria criteria = condition.createCriteria();
         if (!StringUtils.isEmpty(dictionaryDTO.getName())){
@@ -121,7 +121,7 @@ public class DictionaryServiceImpl implements DictionaryService {
         return dtos;
     }
 
-    public List<DictionaryDTO> queryAll() throws Exception {
+    public List<DictionaryDTO> queryAll()  {
         List<DictionaryDTO> dtos = null;
         List<Dictionary> dictionaries = dictionaryDao.selectAll();
         DictionaryDTO dto = null;

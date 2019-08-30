@@ -17,6 +17,7 @@ public class BaseEntity {
      * 主键id
      */
     @Id
+    @JsonSerialize(using = ToStringSerializer.class)
     protected Long id;
 
 

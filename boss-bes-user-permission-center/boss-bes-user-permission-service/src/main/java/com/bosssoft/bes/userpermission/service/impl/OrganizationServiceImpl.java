@@ -32,14 +32,14 @@ public class OrganizationServiceImpl implements OrganizationService {
     @Autowired
     private DataSourceTransactionManager transactionManager;
 
-    public int add(OrganizationDTO organizationDTO) throws Exception {
+    public int add(OrganizationDTO organizationDTO)  {
         Organization organizationToDb = new Organization();
         BeanUtils.copyProperties(organizationDTO,organizationToDb);
         return organizationDao.insert(organizationToDb);
     }
 
     @Transactional
-    public int delete(List<OrganizationDTO> dtos) throws Exception {
+    public int delete(List<OrganizationDTO> dtos)  {
         DefaultTransactionDefinition def = new DefaultTransactionDefinition();
         def.setName("deleteOrganizations");
         def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED);
@@ -62,7 +62,7 @@ public class OrganizationServiceImpl implements OrganizationService {
         return res;
     }
 
-    public int update(OrganizationDTO organizationDTO) throws Exception {
+    public int update(OrganizationDTO organizationDTO)  {
         Organization organizationToDb = new Organization();
         BeanUtils.copyProperties(organizationDTO,organizationToDb);
         return organizationDao.updateByPrimaryKeySelective(organizationToDb);
@@ -75,7 +75,7 @@ public class OrganizationServiceImpl implements OrganizationService {
         return dto;
     }
 
-    public List<OrganizationDTO> queryByCondition(OrganizationDTO organizationDTO) throws Exception {
+    public List<OrganizationDTO> queryByCondition(OrganizationDTO organizationDTO)  {
         Condition condition = new Condition(Organization.class);
         Example.Criteria criteria = condition.createCriteria();
         if (!StringUtils.isEmpty(organizationDTO.getName())){
@@ -98,7 +98,7 @@ public class OrganizationServiceImpl implements OrganizationService {
         return dtos;
     }
 
-    public OrganizationDTO getByPrimaryKey(Long id) throws Exception {
+    public OrganizationDTO getByPrimaryKey(Long id)  {
         return null;
     }
 
@@ -106,7 +106,7 @@ public class OrganizationServiceImpl implements OrganizationService {
         return null;
     }
 
-    public List<OrganizationDTO> queryAll() throws Exception {
+    public List<OrganizationDTO> queryAll()  {
         return null;
     }
 }
