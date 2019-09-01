@@ -33,6 +33,7 @@ public class DictionaryController{
     public CommonResponse<String> delete(@RequestBody CommonRequest<List<DictionaryDataItemVO>> commonRequest  ) {
         //将前端传的数据转为list
         List<DictionaryDataItemVO> voList = commonRequest.getBody();
+        System.out.println(commonRequest.getBody().toString());
         //前端传输的数据不为空则调用service层
         if (voList != null && voList.size()> 0){
             List<DictionaryDTO> dtoList = new ArrayList<>(voList.size());
