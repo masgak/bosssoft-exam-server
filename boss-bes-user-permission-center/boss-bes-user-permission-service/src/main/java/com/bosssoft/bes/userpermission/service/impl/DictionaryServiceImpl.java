@@ -19,6 +19,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * @author wukeqiang
+ * @date 2019-09-01
+ */
 @Service
 public class DictionaryServiceImpl implements DictionaryService {
 
