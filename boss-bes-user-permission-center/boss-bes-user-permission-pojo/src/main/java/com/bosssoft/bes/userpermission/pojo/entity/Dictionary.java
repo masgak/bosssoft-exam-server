@@ -7,6 +7,10 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.Table;
 import java.io.Serializable;
 
+/**
+ * @author wukeqiang
+ * @date 2019-09-01
+ */
 @Repository
 @Table(name = "t_dictionary")
 public class Dictionary extends BaseEntity implements Serializable {
