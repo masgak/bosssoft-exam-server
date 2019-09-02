@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bosssoft.bes.userpermission.dao.SubjectDao">
+
+    <select id="loadSubjects" resultType="com.bosssoft.bes.userpermission.pojo.dto.SubjectDTO">
+        SELECT s.id, s.`name`, s.`status`,  s.`updated_time` AS updatedTime,
+        t.`name` AS subjectType, c.`name` AS category
+        FROM t_subject s, t_subject_type t, t_category c
+        WHERE s.`category_id`=c.`id` AND s.`subject_type_id`=t.`id` and s.status = 1
+    </select>
+</mapper>
