@@ -4,6 +4,8 @@ import com.bosssoft.bes.userpermission.pojo.base.DataItemVO;
 
 /**
  * 增删改页面VO
+ * @author wukeqiang
+ * @date 2019-09-01
  */
 public class DictionaryDataItemVO extends DataItemVO {
     /**

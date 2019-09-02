@@ -6,6 +6,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * @author wukeqiang
+ * @date 2019-09-01
+ */
 @Service
 public class SubjectServiceImpl implements SubjectService {
     public int add(SubjectDTO subjectDTO) {

@@ -13,4 +13,28 @@ public class Subject extends BaseEntity implements Serializable {
     public Subject(){
     }
 
+    /**
+     * 题目名称
+     */
+    protected String name;
+    /**
+     * 状态位
+     */
+    protected Byte status;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Byte getStatus() {
+        return status;
+    }
+
+    public void setStatus(Byte status) {
+        this.status = status;
+    }
 }

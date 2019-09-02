@@ -21,6 +21,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author wukeqiang
+ * @date 2019-08-28 9:30
+ */
 @RestController
 public class DictionaryController{
 
