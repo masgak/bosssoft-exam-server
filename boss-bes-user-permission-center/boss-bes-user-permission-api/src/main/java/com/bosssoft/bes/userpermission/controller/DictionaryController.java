@@ -18,6 +18,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +32,8 @@ public class DictionaryController{
 
     @Autowired
     private DictionaryService dictionaryService;
+
+    private String filename="数据字典";
 
     @GlobalExceptionLog
     @CrossOrigin
@@ -158,7 +162,7 @@ public class DictionaryController{
         try {
             List<DictionaryDTO> dto = dictionaryService.queryAll();
             FileUtils.exportExcel(dto,"数据字典表","导出",Dictionary.class,
-                    "数据字典.xls",response);
+                    filename+".xls",response);
         }catch (ServiceException serviceException){
             throw new BusinessException(serviceException);
         }
@@ -172,5 +176,10 @@ public class DictionaryController{
         return null;
     }
 
-
+    @GlobalExceptionLog
+    @CrossOrigin
+    @PostMapping("api/setFilename")
+    public void setFilename(@RequestBody String filename) throws UnsupportedEncodingException {
+        this.filename = URLDecoder.decode(filename.substring(0,filename.length()-1), "UTF-8");
+    }
 }
