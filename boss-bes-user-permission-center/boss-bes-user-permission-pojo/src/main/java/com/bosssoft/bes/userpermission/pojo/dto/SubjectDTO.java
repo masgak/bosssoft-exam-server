@@ -10,30 +10,41 @@ public class SubjectDTO extends Subject {
     public SubjectDTO(){
     }
 
-    private String category;
-    private String subjectType;
+    private int category;
+    private int subjectType;
+    private int subjectDifficulty;
 
-    public String getCategory() {
+    public int getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(int category) {
         this.category = category;
     }
 
-    public String getSubjectType() {
+    public int getSubjectType() {
         return subjectType;
     }
 
-    public void setSubjectType(String subjectType) {
+    public void setSubjectType(int subjectType) {
         this.subjectType = subjectType;
+    }
+
+
+    public int getSubjectDifficulty() {
+        return subjectDifficulty;
+    }
+
+    public void setSubjectDifficulty(int subjectDifficulty) {
+        this.subjectDifficulty = subjectDifficulty;
     }
 
     @Override
     public String toString() {
         return "SubjectDTO{" +
-                "category='" + category + '\'' +
-                ", subjectType='" + subjectType + '\'' +
+                "category=" + category +
+                ", subjectType=" + subjectType +
+                ", subjectDifficulty=" + subjectDifficulty +
                 ", name='" + name + '\'' +
                 ", status=" + status +
                 ", id=" + id +

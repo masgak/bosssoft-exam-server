@@ -8,8 +8,10 @@ import com.bosssoft.bes.base.coredata.vo.ResponseHead;
 import com.bosssoft.bes.base.exception.BusinessException;
 import com.bosssoft.bes.base.exception.ServiceException;
 import com.bosssoft.bes.base.utils.FileUtils;
+import com.bosssoft.bes.userpermission.pojo.dto.SubjectAnswerDTO;
 import com.bosssoft.bes.userpermission.pojo.dto.SubjectDTO;
 import com.bosssoft.bes.userpermission.pojo.entity.Subject;
+import com.bosssoft.bes.userpermission.pojo.entity.SubjectAnswer;
 import com.bosssoft.bes.userpermission.pojo.vo.SubjectDataItemVO;
 import com.bosssoft.bes.userpermission.pojo.vo.SubjectQueryConditionVO;
 import com.bosssoft.bes.userpermission.service.SubjectService;
@@ -74,35 +76,49 @@ public class SubjectController{
 
     @GlobalExceptionLog
     @CrossOrigin
-    @PostMapping("api/subject/addSubject")
+    @PostMapping("api/addSubject")
     public CommonResponse<String> add(@RequestBody CommonRequest<SubjectDataItemVO> commonRequest  ) {
         //传输数据不为空进入service层
         if (commonRequest.getBody() != null){
             SubjectDataItemVO subjectDataItemVO = commonRequest.getBody();
-            System.out.println("状态为"+subjectDataItemVO.getStatus());
+            //将题目VO转为DTO
             SubjectDTO subjectDTO = new SubjectDTO();
-            BeanUtils.copyProperties(subjectDataItemVO, subjectDTO);
-            System.out.println("获得的数据为"+subjectDTO);
-            int result = 0;
-            try {
-                result = subjectService.add(subjectDTO);
-            } catch (ServiceException serviceException) {
-                throw new BusinessException(serviceException);
+            BeanUtils.copyProperties(subjectDataItemVO,subjectDTO);
+
+            //题目答案长度
+            int size = subjectDataItemVO.getSubjectAnswers().size();
+            //将传输信息中的answer信息存入answerdto中
+            List<SubjectAnswerDTO> subjectAnswers = subjectDataItemVO.getSubjectAnswers();
+            List<SubjectAnswerDTO> subjectOptions = subjectDataItemVO.getSubjectOptions();
+            for (SubjectAnswerDTO dto:subjectAnswers){
+                System.out.println("ansdto数据"+dto.toString());
             }
-            //返回前端的CommonResponse
-            CommonResponse<String> response = new CommonResponse<>();
-            //返回前端的ResponseHead
-            ResponseHead head = new ResponseHead();
-            //前端传输的数据不为空则调用service层
-            head.setEncryption(0);
-            head.setCode("0");
-            if (result > 0){
-                head.setMessage("增加成功");
-            }else {
-                head.setMessage("增加失败");
+            for (SubjectAnswerDTO dto:subjectOptions){
+                System.out.println("optdto数据"+dto.toString());
             }
-            response.setResponseHead(head);
-            return response;
+//            SubjectDTO subjectDTO = new SubjectDTO();
+//            BeanUtils.copyProperties(subjectDataItemVO, subjectDTO);
+//            System.out.println("获得的数据为"+subjectDTO);
+//            int result = 0;
+//            try {
+//                result = subjectService.add(subjectDTO);
+//            } catch (ServiceException serviceException) {
+//                throw new BusinessException(serviceException);
+//            }
+//            //返回前端的CommonResponse
+//            CommonResponse<String> response = new CommonResponse<>();
+//            //返回前端的ResponseHead
+//            ResponseHead head = new ResponseHead();
+//            //前端传输的数据不为空则调用service层
+//            head.setEncryption(0);
+//            head.setCode("0");
+//            if (result > 0){
+//                head.setMessage("增加成功");
+//            }else {
+//                head.setMessage("增加失败");
+//            }
+//            response.setResponseHead(head);
+//            return response;
         }
         return null;
     }
