@@ -157,7 +157,7 @@ public class DictionaryController{
 
     @GlobalExceptionLog
     @CrossOrigin
-    @GetMapping("api/execel")
+    @GetMapping("api/excelDictionary")
     public void export(HttpServletResponse response){
         try {
             List<DictionaryDTO> dto = dictionaryService.queryAll();
@@ -178,7 +178,7 @@ public class DictionaryController{
 
     @GlobalExceptionLog
     @CrossOrigin
-    @PostMapping("api/setFilename")
+    @PostMapping("api/setDictionaryFilename")
     public void setFilename(@RequestBody String filename) throws UnsupportedEncodingException {
         this.filename = URLDecoder.decode(filename.substring(0,filename.length()-1), "UTF-8");
     }

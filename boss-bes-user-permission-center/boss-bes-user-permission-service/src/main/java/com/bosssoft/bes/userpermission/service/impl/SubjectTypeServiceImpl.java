@@ -27,7 +27,7 @@ import java.util.List;
 public class SubjectTypeServiceImpl implements SubjectTypeService {
 
 	@Autowired
-	SubjectTypeDao subjectTypeDao;
+	private SubjectTypeDao subjectTypeDao;
 
 	@Autowired
 	private DataSourceTransactionManager dataSourceTransactionManager;
@@ -56,11 +56,9 @@ public class SubjectTypeServiceImpl implements SubjectTypeService {
 				return 1;
 			}catch (Exception e){
 				e.printStackTrace();
-				return 0;
 			}
-		}else {
-			return 0;
 		}
+		return 0;
 	}
 
 	/**
@@ -81,7 +79,7 @@ public class SubjectTypeServiceImpl implements SubjectTypeService {
 	}
 
 	/**
-	 * 更新题型信息
+	 * 修改题型信息
 	 * @param subjectTypeDTO
 	 * @return
 	 */
@@ -91,13 +89,13 @@ public class SubjectTypeServiceImpl implements SubjectTypeService {
 		//省略对比版本号
 
 		SubjectType subjectType = new SubjectType();
-		subjectType.setUpdatedTime(DateUtils.getDate());
 		BeanUtils.copyProperties(subjectTypeDTO,subjectType);
+		subjectType.setUpdatedTime(DateUtils.getDate());
 		return subjectTypeDao.updateByPrimaryKeySelective(subjectType);
 	}
 
 	/**
-	 * 通过id查询
+	 * 通过id查询题型
 	 * @param id 题型id
 	 * @return dto
 	 */
@@ -142,11 +140,10 @@ public class SubjectTypeServiceImpl implements SubjectTypeService {
 	 * @return
 	 */
 	public List<SubjectTypeDTO> queryAll()  {
-		List<SubjectTypeDTO> dtos = null;
+		List<SubjectTypeDTO> dtos =new ArrayList<SubjectTypeDTO>();
 		List<SubjectType> subjectTypes = subjectTypeDao.selectAll();
 		SubjectTypeDTO dto = null;
 		if (subjectTypes != null){
-			dtos = new ArrayList<SubjectTypeDTO>(subjectTypes.size());
 			for (SubjectType subjectType:subjectTypes){
 				dto = new SubjectTypeDTO();
 				BeanUtils.copyProperties(subjectType,dto);

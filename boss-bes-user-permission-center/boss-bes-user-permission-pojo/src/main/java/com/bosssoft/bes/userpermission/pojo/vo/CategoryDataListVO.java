@@ -1,33 +1,43 @@
 package com.bosssoft.bes.userpermission.pojo.vo;
 
-import com.bosssoft.bes.userpermission.pojo.base.DataItemVO;
+import com.bosssoft.bes.userpermission.pojo.base.DataListVO;
 
 /**
  * @author : huangyuhui
  * @version : 1.0
- * @date : 2019/9/1 0001
- * @description : 增删改页面VO
+ * @date : 2019/9/2 0002
  */
-public class SubjectTypeDataItemVO extends DataItemVO {
-
-	public SubjectTypeDataItemVO() {
+public class CategoryDataListVO extends DataListVO {
+	public CategoryDataListVO() {
 	}
 
+
 	/**
-	 * 题型名称
+	 * 类别名称
 	 */
 	protected String name;
+
 
 	/**
 	 * 状态位
 	 */
 	protected Byte status;
 
+
 	/**
 	 * 备注
 	 */
 	protected String remark;
 
+	/**
+	 * 更新时间
+	 */
+	protected String updateTime;
+
+//	/**
+//	 * 父类别 ID
+//	 */
+//	protected Long parentId;
 
 
 	public String getName() {
@@ -54,13 +64,12 @@ public class SubjectTypeDataItemVO extends DataItemVO {
 		this.remark = remark;
 	}
 
-	@Override
-	public String toString() {
-		return "SubjectTypeDataItemVO{" +
-				"name='" + name + '\'' +
-				", status=" + status +
-				", remark='" + remark + '\'' +
-				", id=" + id +
-				'}';
+	public String getUpdateTime() {
+		return updateTime;
 	}
+
+	public void setUpdateTime(String updateTime) {
+		this.updateTime = updateTime;
+	}
+
 }

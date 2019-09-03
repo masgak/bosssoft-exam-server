@@ -5,15 +5,14 @@ import com.bosssoft.bes.userpermission.pojo.base.QueryConditionVO;
 /**
  * @author : huangyuhui
  * @version : 1.0
- * @date : 2019/9/1 0001
+ * @date : 2019/9/2 0003
  */
-public class SubjectTypeQueryConditionVO  extends QueryConditionVO {
-
-	public SubjectTypeQueryConditionVO() {
+public class CategoryQueryConditionVO extends QueryConditionVO {
+	public CategoryQueryConditionVO() {
 	}
 
 	/**
-	 * 题型名称
+	 * 类别名称
 	 */
 	protected String name;
 
@@ -21,6 +20,7 @@ public class SubjectTypeQueryConditionVO  extends QueryConditionVO {
 	 * 状态位
 	 */
 	protected Byte status;
+
 
 	public String getName() {
 		return name;
@@ -40,7 +40,7 @@ public class SubjectTypeQueryConditionVO  extends QueryConditionVO {
 
 	@Override
 	public String toString() {
-		return "SubjectTypeQueryConditionVO{" +
+		return "CategoryQueryConditionVO{" +
 				"name='" + name + '\'' +
 				", status=" + status +
 				'}';
