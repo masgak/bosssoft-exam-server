@@ -145,10 +145,9 @@ public class SubjectController{
     }
 
     @CrossOrigin
-    @GetMapping("api/subject/loadDictionaries")
+    @GetMapping("api/loadSubjects")
     public List<SubjectDTO> list() throws Exception {
-        SubjectDTO dto = new SubjectDTO();
-        return  subjectService.queryByCondition(dto);
+        return subjectService.queryAll();
     }
 
     @GlobalExceptionLog
