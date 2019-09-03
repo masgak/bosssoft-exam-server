@@ -1,19 +1,19 @@
 package com.bosssoft.bes.userpermission.pojo.vo;
 
-import com.bosssoft.bes.userpermission.pojo.base.QueryConditionVO;
+import com.bosssoft.bes.userpermission.pojo.base.DataItemVO;
 
 /**
  * @author : huangyuhui
  * @version : 1.0
- * @date : 2019/9/1 0001
+ * @date : 2019/9/3 0003
  */
-public class SubjectTypeQueryConditionVO  extends QueryConditionVO {
+public class CategoryDataItemVO extends DataItemVO {
 
-	public SubjectTypeQueryConditionVO() {
+	public CategoryDataItemVO() {
 	}
 
 	/**
-	 * 题型名称
+	 * 类别名称
 	 */
 	protected String name;
 
@@ -21,6 +21,13 @@ public class SubjectTypeQueryConditionVO  extends QueryConditionVO {
 	 * 状态位
 	 */
 	protected Byte status;
+
+	/**
+	 * 备注
+	 */
+	protected String remark;
+
+
 
 	public String getName() {
 		return name;
@@ -38,11 +45,21 @@ public class SubjectTypeQueryConditionVO  extends QueryConditionVO {
 		this.status = status;
 	}
 
+	public String getRemark() {
+		return remark;
+	}
+
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+
 	@Override
 	public String toString() {
-		return "SubjectTypeQueryConditionVO{" +
+		return "CategoryDataItemVO{" +
 				"name='" + name + '\'' +
 				", status=" + status +
+				", remark='" + remark + '\'' +
+				", id=" + id +
 				'}';
 	}
 }

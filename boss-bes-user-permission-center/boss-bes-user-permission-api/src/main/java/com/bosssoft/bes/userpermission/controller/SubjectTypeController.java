@@ -44,7 +44,7 @@ public class SubjectTypeController {
 		List<SubjectTypeDataItemVO> voList = commonRequest.getBody();
 		//前端传输的数据不为空则调用service层
 		if (voList != null && voList.size()> 0){
-			List<SubjectTypeDTO> dtoList = new ArrayList<>(voList.size());
+			List<SubjectTypeDTO> dtoList = new ArrayList<SubjectTypeDTO>(voList.size());
 			SubjectTypeDTO subjectTypeDTO = null;
 			//将vo转为dto后，将dto存入dto列表
 			for (SubjectTypeDataItemVO vo:voList){
@@ -142,9 +142,9 @@ public class SubjectTypeController {
 		return null;
 	}
 
-	public CommonResponse queryByPrimaryKey(CommonRequest commonRequest) {
-		return null;
-	}
+//	public CommonResponse queryByPrimaryKey(CommonRequest commonRequest) {
+//		return null;
+//	}
 
 	@CrossOrigin
 	@GetMapping("api/loadSubjectTypes")
@@ -156,13 +156,12 @@ public class SubjectTypeController {
 
 	@GlobalExceptionLog
 	@CrossOrigin
-	@GetMapping("api/execelSubjectType")
-	@ApiLog
-	public void export(HttpServletResponse response, String file){
+	@GetMapping("api/excelSubjectType")
+	public void export(HttpServletResponse response){
 		try {
 			List<SubjectTypeDTO> dto = subjectTypeService.queryAll();
-			FileUtils.exportExcel(dto,"题型表","导出", SubjectType.class,
-					file+".xls",response);
+			FileUtils.exportExcel(dto,"题型表","导出",SubjectType.class,
+					filename+".xls",response);
 		}catch (ServiceException serviceException){
 			throw new BusinessException(serviceException);
 		}
