@@ -21,7 +21,7 @@ public class SubjectAnswer  implements Serializable {
     /**
      * 答案ID
      */
-    protected Byte ID;
+    protected Long ID;
     /**
      * 答案名称
      */
@@ -33,15 +33,7 @@ public class SubjectAnswer  implements Serializable {
     /**
      * 答案对应的题目ID
      */
-    protected int subjectID;
-
-    public Byte getID() {
-        return ID;
-    }
-
-    public void setID(Byte ID) {
-        this.ID = ID;
-    }
+    protected Long subjectID;
 
     public String getAnswer() {
         return answer;
@@ -59,11 +51,19 @@ public class SubjectAnswer  implements Serializable {
         this.correct = correct;
     }
 
-    public int getSubjectID() {
+    public Long getID() {
+        return ID;
+    }
+
+    public void setID(Long ID) {
+        this.ID = ID;
+    }
+
+    public Long getSubjectID() {
         return subjectID;
     }
 
-    public void setSubjectID(int subjectID) {
+    public void setSubjectID(Long subjectID) {
         this.subjectID = subjectID;
     }
 

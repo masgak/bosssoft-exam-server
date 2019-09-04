@@ -8,6 +8,7 @@ import com.bosssoft.bes.base.coredata.vo.ResponseHead;
 import com.bosssoft.bes.base.exception.BusinessException;
 import com.bosssoft.bes.base.exception.ServiceException;
 import com.bosssoft.bes.base.utils.FileUtils;
+import com.bosssoft.bes.base.utils.SnowFlake;
 import com.bosssoft.bes.userpermission.pojo.dto.SubjectAnswerDTO;
 import com.bosssoft.bes.userpermission.pojo.dto.SubjectDTO;
 import com.bosssoft.bes.userpermission.pojo.entity.Subject;
@@ -84,17 +85,21 @@ public class SubjectController{
             //将题目VO转为DTO
             SubjectDTO subjectDTO = new SubjectDTO();
             BeanUtils.copyProperties(subjectDataItemVO,subjectDTO);
-
-            //题目答案长度
-            int size = subjectDataItemVO.getSubjectAnswers().size();
+            //为题目DTO赋予ID用于传给答案DTO
+            SnowFlake snowFlake = new SnowFlake(2,3);
+            subjectDTO.setId(snowFlake.nextId());
             //将传输信息中的answer信息存入answerdto中
-            List<SubjectAnswerDTO> subjectAnswers = subjectDataItemVO.getSubjectAnswers();
-            List<SubjectAnswerDTO> subjectOptions = subjectDataItemVO.getSubjectOptions();
-            for (SubjectAnswerDTO dto:subjectAnswers){
-                System.out.println("ansdto数据"+dto.toString());
-            }
-            for (SubjectAnswerDTO dto:subjectOptions){
-                System.out.println("optdto数据"+dto.toString());
+            List<SubjectAnswerDTO> subjectAnswerDTOs = subjectDataItemVO.getSubjectAnswers();
+            SubjectAnswerDTO subjectAnswerDTO = null;
+            for (SubjectAnswerDTO dto:subjectAnswerDTOs){
+//                subjectAnswerDTO = new SubjectAnswerDTO();
+//                BeanUtils.copyProperties(dto,subjectAnswerDTO);
+                //将题目ID存入答案中
+//                subjectAnswerDTO.setSubjectID(subjectDataItemVO.getId());
+                //将题目答案DTO存入数据库中
+                dto.setSubjectID(subjectDTO.getId());
+                System.out.println("答案数据为"+dto.toString());
+
             }
 //            SubjectDTO subjectDTO = new SubjectDTO();
 //            BeanUtils.copyProperties(subjectDataItemVO, subjectDTO);

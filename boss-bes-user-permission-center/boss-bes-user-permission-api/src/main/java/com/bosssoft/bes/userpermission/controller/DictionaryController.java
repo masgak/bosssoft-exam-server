@@ -58,9 +58,9 @@ public class DictionaryController{
             }catch (ServiceException serviceException){
                 throw new BusinessException(serviceException);
             }
-            //返回前端的CommonResponse
+            //CommonResponse
             CommonResponse<String> response = new CommonResponse<>();
-            //返回前端的ResponseHead
+            //ResponseHead
             ResponseHead head = new ResponseHead();
             head.setEncryption(0);
             head.setCode("0");
