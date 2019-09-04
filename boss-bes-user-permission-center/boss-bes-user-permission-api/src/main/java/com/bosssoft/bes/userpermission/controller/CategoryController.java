@@ -9,6 +9,7 @@ import com.bosssoft.bes.base.exception.ServiceException;
 import com.bosssoft.bes.base.logging.annotation.ApiLog;
 import com.bosssoft.bes.base.utils.FileUtils;
 import com.bosssoft.bes.userpermission.pojo.dto.CategoryDTO;
+import com.bosssoft.bes.userpermission.pojo.dto.CategoryTreeDTO;
 import com.bosssoft.bes.userpermission.pojo.entity.Category;
 import com.bosssoft.bes.userpermission.pojo.vo.CategoryDataItemVO;
 import com.bosssoft.bes.userpermission.pojo.vo.CategoryQueryConditionVO;
@@ -152,9 +153,16 @@ public class CategoryController {
 	@CrossOrigin
 	@PostMapping("api/queryCategory")
 	@ApiLog
-	public CommonResponse<String> query(@RequestBody CommonRequest<CategoryQueryConditionVO> commonRequest) {
-		System.out.println(commonRequest.getBody());
-		return null;
+	public List<CategoryDTO> query(@RequestBody CommonRequest<CategoryQueryConditionVO> commonRequest) {
+			CategoryQueryConditionVO vo=commonRequest.getBody();
+			if(vo!=null){
+				CategoryDTO dto=new CategoryDTO();
+				BeanUtils.copyProperties(vo,dto);
+				System.out.println(dto);
+				List<CategoryDTO> list=categoryService.queryByCondition(dto);
+				return list;
+			}
+			return null;
 	}
 
 	@GlobalExceptionLog
@@ -177,6 +185,13 @@ public class CategoryController {
 	@PostMapping("api/setCategoryFilename")
 	public void setFilename(@RequestBody String filename) throws UnsupportedEncodingException {
 		this.filename = URLDecoder.decode(filename.substring(0,filename.length()-1), "UTF-8");
+	}
+
+	@CrossOrigin
+	@GetMapping("api/loadCategoryTree")
+	@ApiLog
+	public List<CategoryTreeDTO> getTree() throws Exception {
+		return categoryService.getTree();
 	}
 
 }

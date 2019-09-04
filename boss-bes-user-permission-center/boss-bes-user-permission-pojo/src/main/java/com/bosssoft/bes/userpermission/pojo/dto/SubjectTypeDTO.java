@@ -12,7 +12,7 @@ public class SubjectTypeDTO extends SubjectType {
 	}
 	@Override
 	public String toString() {
-		return "OrganizationDTO{" +
+		return "SubjectTypeDTO{" +
 				"name='" + name + '\'' +
 				", id=" + id +
 				", status=" + status +

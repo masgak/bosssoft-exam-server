@@ -17,9 +17,6 @@ public class CategoryDTO extends Category {
 
 	@Override
 	public String toString() {
-
-		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		 String dateString = formatter.format(updatedTime);
 		return "CategoryDTO{" +
 				" name='" + name + '\'' +
 				", id=" + id +
@@ -28,7 +25,7 @@ public class CategoryDTO extends Category {
 				", orgId=" + orgId+
 				", remark=" + remark+
 				", createdBy=" + createdBy +
-				", createdTime=" + dateString +
+				", createdTime=" + createdTime +
 				", updatedBy=" + updatedBy +
 				", updatedTime=" + updatedTime +
 				", version=" + version +

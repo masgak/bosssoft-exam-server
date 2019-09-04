@@ -15,6 +15,7 @@ import com.bosssoft.bes.userpermission.pojo.entity.Subject;
 import com.bosssoft.bes.userpermission.pojo.entity.SubjectAnswer;
 import com.bosssoft.bes.userpermission.pojo.vo.SubjectDataItemVO;
 import com.bosssoft.bes.userpermission.pojo.vo.SubjectQueryConditionVO;
+import com.bosssoft.bes.userpermission.service.SubjectAnswerService;
 import com.bosssoft.bes.userpermission.service.SubjectService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,7 @@ public class SubjectController{
 
     @Autowired
     private SubjectService subjectService;
+
 
     @GlobalExceptionLog
     @CrossOrigin
