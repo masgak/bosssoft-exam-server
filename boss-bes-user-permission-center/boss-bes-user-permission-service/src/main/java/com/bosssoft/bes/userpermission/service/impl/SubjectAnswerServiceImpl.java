@@ -5,9 +5,11 @@ import com.bosssoft.bes.userpermission.dao.SubjectAnswerDao;
 import com.bosssoft.bes.userpermission.pojo.dto.SubjectAnswerDTO;
 import com.bosssoft.bes.userpermission.service.SubjectAnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class SubjectAnswerServiceImpl implements SubjectAnswerService {
 
     @Autowired
@@ -17,7 +19,7 @@ public class SubjectAnswerServiceImpl implements SubjectAnswerService {
         if (subjectAnswerDTO != null){
             //由雪花算法生成相关id
             SnowFlake snowFlake = new SnowFlake(2,3);
-            subjectAnswerDTO.setID(snowFlake.nextId());
+            subjectAnswerDTO.setId(snowFlake.nextId());
             try {
                 subjectAnswerDao.insert(subjectAnswerDTO);
                 return 1;

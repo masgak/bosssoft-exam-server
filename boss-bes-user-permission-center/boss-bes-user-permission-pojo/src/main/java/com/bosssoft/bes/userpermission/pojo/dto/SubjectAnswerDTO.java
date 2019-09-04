@@ -10,10 +10,10 @@ public class SubjectAnswerDTO extends SubjectAnswer {
     @Override
     public String toString() {
         return "SubjectAnswerDTO{" +
-                "ID=" + ID +
+                "id=" + id +
                 ", answer='" + answer + '\'' +
                 ", correct=" + correct +
-                ", subjectID=" + subjectID +
+                ", subjectId=" + subjectId +
                 '}';
     }
 }

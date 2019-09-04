@@ -187,6 +187,7 @@ public class CategoryServiceImpl implements CategoryService {
 				if(category.getChildList()==null){
 					category.setChildList(new ArrayList<CategoryTreeDTO>());
 				}
+				//把该元素加入其父节点的子节点列表
 				category.getChildList().add(categoryNodes.get(i));
 			}
 		}

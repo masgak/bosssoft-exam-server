@@ -10,23 +10,24 @@ public class SubjectDTO extends Subject {
     public SubjectDTO(){
     }
 
-    private String category;
-    private String subjectType;
+    private long category;
+    private long subjectType;
     private int subjectDifficulty;
 
-    public String getCategory() {
+
+    public long getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(long category) {
         this.category = category;
     }
 
-    public String getSubjectType() {
+    public long getSubjectType() {
         return subjectType;
     }
 
-    public void setSubjectType(String subjectType) {
+    public void setSubjectType(long subjectType) {
         this.subjectType = subjectType;
     }
 

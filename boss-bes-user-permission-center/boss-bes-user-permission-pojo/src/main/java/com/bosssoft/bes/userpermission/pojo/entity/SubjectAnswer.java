@@ -1,8 +1,11 @@
 package com.bosssoft.bes.userpermission.pojo.entity;
 
 import com.bosssoft.bes.userpermission.pojo.base.BaseEntity;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
@@ -21,7 +24,9 @@ public class SubjectAnswer  implements Serializable {
     /**
      * 答案ID
      */
-    protected Long ID;
+    @JsonSerialize(using = ToStringSerializer.class)
+    protected Long id;
+
     /**
      * 答案名称
      */
@@ -33,7 +38,7 @@ public class SubjectAnswer  implements Serializable {
     /**
      * 答案对应的题目ID
      */
-    protected Long subjectID;
+    protected Long subjectId;
 
     public String getAnswer() {
         return answer;
@@ -51,29 +56,29 @@ public class SubjectAnswer  implements Serializable {
         this.correct = correct;
     }
 
-    public Long getID() {
-        return ID;
+    public Long getId() {
+        return id;
     }
 
-    public void setID(Long ID) {
-        this.ID = ID;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public Long getSubjectID() {
-        return subjectID;
+    public Long getSubjectId() {
+        return subjectId;
     }
 
-    public void setSubjectID(Long subjectID) {
-        this.subjectID = subjectID;
+    public void setSubjectId(Long subjectId) {
+        this.subjectId = subjectId;
     }
 
     @Override
     public String toString() {
         return "SubjectAnswer{" +
-                "ID=" + ID +
+                "id=" + id +
                 ", answer='" + answer + '\'' +
                 ", correct=" + correct +
-                ", subjectID=" + subjectID +
+                ", subjectId=" + subjectId +
                 '}';
     }
 }

@@ -15,11 +15,11 @@ public class SubjectDataItemVO extends DataItemVO {
     /**
      * 题目类别
      */
-    protected int category;
+    protected long category;
     /**
      * 题型
      */
-    protected int subjectType;
+    protected long subjectType;
     /**
      * 题目难度
      */
@@ -33,28 +33,25 @@ public class SubjectDataItemVO extends DataItemVO {
      *题目ID
      */
     protected List<SubjectAnswerDTO> subjectAnswers;
-    /**
-     * 题目选项
-     */
-    protected List<SubjectAnswerDTO> subjectOptions;
+
     /**
      * 状态位
      */
     protected Byte status;
 
-    public int getCategory() {
+    public long getCategory() {
         return category;
     }
 
-    public void setCategory(int category) {
+    public void setCategory(long category) {
         this.category = category;
     }
 
-    public int getSubjectType() {
+    public long getSubjectType() {
         return subjectType;
     }
 
-    public void setSubjectType(int subjectType) {
+    public void setSubjectType(long subjectType) {
         this.subjectType = subjectType;
     }
 
@@ -90,13 +87,6 @@ public class SubjectDataItemVO extends DataItemVO {
         this.subjectAnswers = subjectAnswers;
     }
 
-    public List<SubjectAnswerDTO> getSubjectOptions() {
-        return subjectOptions;
-    }
-
-    public void setSubjectOptions(List<SubjectAnswerDTO> subjectOptions) {
-        this.subjectOptions = subjectOptions;
-    }
 
     @Override
     public String toString() {
@@ -106,7 +96,6 @@ public class SubjectDataItemVO extends DataItemVO {
                 ", subjectDifficulty='" + subjectDifficulty + '\'' +
                 ", name='" + name + '\'' +
                 ", subjectAnswers=" + subjectAnswers +
-                ", subjectOptions=" + subjectOptions +
                 ", status=" + status +
                 ", id=" + id +
                 '}';

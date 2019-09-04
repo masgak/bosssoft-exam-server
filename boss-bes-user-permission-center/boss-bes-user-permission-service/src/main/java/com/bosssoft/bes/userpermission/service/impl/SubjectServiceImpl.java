@@ -1,5 +1,6 @@
 package com.bosssoft.bes.userpermission.service.impl;
 
+import com.bosssoft.bes.base.utils.DateUtils;
 import com.bosssoft.bes.userpermission.dao.SubjectDao;
 import com.bosssoft.bes.userpermission.pojo.dto.SubjectDTO;
 import com.bosssoft.bes.userpermission.pojo.entity.Subject;
@@ -12,6 +13,7 @@ import tk.mybatis.mapper.entity.Condition;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -25,7 +27,27 @@ public class SubjectServiceImpl implements SubjectService {
     private SubjectDao subjectDao;
 
     public int add(SubjectDTO subjectDTO) {
-        return 0;
+       if (subjectDTO != null){
+            //插入生成时间以及更新时间，第一次创建时两者相同
+            Date createTime = DateUtils.getDate();
+            Date updateTime = createTime;
+            subjectDTO.setCreatedTime(createTime);
+            subjectDTO.setUpdatedTime(updateTime);
+            //插入创建者以及更新者，后续从redis中获取登录信息
+            subjectDTO.setCreatedBy((long)9527);
+            subjectDTO.setUpdatedBy((long)9527);
+            //插入当前版本
+            subjectDTO.setVersion((long)1.0);
+            try {
+                subjectDao.insert(subjectDTO);
+                return 1;
+            }catch (Exception e){
+                e.printStackTrace();
+                return 0;
+            }
+        }else {
+            return 0;
+        }
     }
 
     public int delete(List<SubjectDTO> subjectDTOS) {
