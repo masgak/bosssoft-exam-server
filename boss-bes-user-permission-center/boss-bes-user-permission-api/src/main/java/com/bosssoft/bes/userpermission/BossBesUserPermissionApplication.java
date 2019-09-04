@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
- * @author 章邴瀚
+ * @author wukeqiang
  * @date 2019-08-19 19:10
  */
 @MapperScan("com.bosssoft.bes.userpermission.dao")
