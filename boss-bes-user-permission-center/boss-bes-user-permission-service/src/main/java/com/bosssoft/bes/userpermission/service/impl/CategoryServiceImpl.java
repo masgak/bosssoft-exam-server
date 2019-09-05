@@ -115,6 +115,12 @@ public class CategoryServiceImpl implements CategoryService {
 		if(!StringUtils.isEmpty(categoryDTO.getName())){
 			criteria.andLike("name","%"+categoryDTO.getName()+"%");
 		}
+		if(categoryDTO.getParentId()!=null){
+			criteria.andEqualTo("parentId",categoryDTO.getParentId());
+		}
+		if(categoryDTO.getId()!=null){
+			criteria.andEqualTo("id",categoryDTO.getId());
+		}
 		List<Category> categories=categoryDao.selectByExample(condition);
 		List<CategoryDTO> dtos=null;
 		CategoryDTO dto=null;
@@ -184,6 +190,8 @@ public class CategoryServiceImpl implements CategoryService {
 			//对于某个元素，查找其父节点
 			CategoryTreeDTO category=(CategoryTreeDTO) treeMap.get(categoryNodes.get(i).getParentId());
 			if(category!=null){
+				//不是叶子节点
+				category.setLeaf((byte) 0);
 				if(category.getChildList()==null){
 					category.setChildList(new ArrayList<CategoryTreeDTO>());
 				}

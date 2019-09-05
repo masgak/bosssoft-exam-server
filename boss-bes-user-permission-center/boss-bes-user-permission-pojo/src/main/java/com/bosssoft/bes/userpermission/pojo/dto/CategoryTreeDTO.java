@@ -1,6 +1,9 @@
 package com.bosssoft.bes.userpermission.pojo.dto;
 
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
+
 import java.util.List;
 
 /**
@@ -11,11 +14,13 @@ import java.util.List;
 public class CategoryTreeDTO {
 
 	public CategoryTreeDTO() {
+		this.leaf=1;
 	}
 
 	/**
 	 * 主键id
 	 */
+	@JsonSerialize(using = ToStringSerializer.class)
 	private Long id;
 
 	/**
@@ -28,6 +33,10 @@ public class CategoryTreeDTO {
 	 */
 	private Long parentId;
 
+	/**
+	 * 是否是叶子节点
+	 */
+	private byte leaf;
 
 	private List<CategoryTreeDTO> childList;
 
@@ -61,5 +70,13 @@ public class CategoryTreeDTO {
 
 	public void setChildList(List<CategoryTreeDTO> childList) {
 		this.childList = childList;
+	}
+
+	public byte getLeaf() {
+		return leaf;
+	}
+
+	public void setLeaf(byte leaf) {
+		this.leaf = leaf;
 	}
 }

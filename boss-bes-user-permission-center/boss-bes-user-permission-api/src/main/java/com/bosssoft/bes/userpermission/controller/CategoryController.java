@@ -48,7 +48,8 @@ public class CategoryController {
 			CategoryDTO categoryDTO=null;
 			for(CategoryDataItemVO vo: volist){
 				categoryDTO=new CategoryDTO();
-				BeanUtils.copyProperties(vo,categoryDTO);
+				//BeanUtils.copyProperties(vo,categoryDTO);
+				categoryDTO.setId(vo.getId());
 				dtos.add(categoryDTO);
 			}
 			//调用service里面的对应方法进行删除
@@ -85,6 +86,9 @@ public class CategoryController {
 		if(vo!=null) {
 			CategoryDTO categoryDTO = new CategoryDTO();
 			BeanUtils.copyProperties(vo, categoryDTO);
+			if(categoryDTO.getParentId()==0){
+				categoryDTO.setParentId(null);
+			}
 			int result = 0;
 			try {
 				result = categoryService.add(categoryDTO);

@@ -12,6 +12,16 @@ public class CategoryQueryConditionVO extends QueryConditionVO {
 	}
 
 	/**
+	 * 父类别 ID
+	 */
+	private Long parentId;
+
+	/**
+	 * 类别ID
+	 */
+	private Long id;
+
+	/**
 	 * 类别名称
 	 */
 	protected String name;
@@ -38,11 +48,29 @@ public class CategoryQueryConditionVO extends QueryConditionVO {
 		this.status = status;
 	}
 
+	public Long getParentId() {
+		return parentId;
+	}
+
+	public void setParentId(Long parentId) {
+		this.parentId = parentId;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	@Override
 	public String toString() {
 		return "CategoryQueryConditionVO{" +
 				"name='" + name + '\'' +
 				", status=" + status +
+				",parentId=" + parentId+
+				",id="+id+
 				'}';
 	}
 }
