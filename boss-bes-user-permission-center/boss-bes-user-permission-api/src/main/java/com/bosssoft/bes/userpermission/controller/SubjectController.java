@@ -15,6 +15,7 @@ import com.bosssoft.bes.userpermission.pojo.entity.Subject;
 import com.bosssoft.bes.userpermission.pojo.entity.SubjectAnswer;
 import com.bosssoft.bes.userpermission.pojo.vo.SubjectDataItemVO;
 import com.bosssoft.bes.userpermission.pojo.vo.SubjectQueryConditionVO;
+import com.bosssoft.bes.userpermission.service.SubjectAnswerService;
 import com.bosssoft.bes.userpermission.service.SubjectService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,9 @@ public class SubjectController{
 
     @Autowired
     private SubjectService subjectService;
+
+    @Autowired
+    private SubjectAnswerService subjectAnswerService;
 
     @GlobalExceptionLog
     @CrossOrigin
@@ -92,38 +96,31 @@ public class SubjectController{
             List<SubjectAnswerDTO> subjectAnswerDTOs = subjectDataItemVO.getSubjectAnswers();
             SubjectAnswerDTO subjectAnswerDTO = null;
             for (SubjectAnswerDTO dto:subjectAnswerDTOs){
-//                subjectAnswerDTO = new SubjectAnswerDTO();
-//                BeanUtils.copyProperties(dto,subjectAnswerDTO);
-                //将题目ID存入答案中
-//                subjectAnswerDTO.setSubjectID(subjectDataItemVO.getId());
                 //将题目答案DTO存入数据库中
                 dto.setSubjectID(subjectDTO.getId());
                 System.out.println("答案数据为"+dto.toString());
-
+                subjectAnswerService.add(dto);
             }
-//            SubjectDTO subjectDTO = new SubjectDTO();
-//            BeanUtils.copyProperties(subjectDataItemVO, subjectDTO);
-//            System.out.println("获得的数据为"+subjectDTO);
-//            int result = 0;
-//            try {
-//                result = subjectService.add(subjectDTO);
-//            } catch (ServiceException serviceException) {
-//                throw new BusinessException(serviceException);
-//            }
-//            //返回前端的CommonResponse
-//            CommonResponse<String> response = new CommonResponse<>();
-//            //返回前端的ResponseHead
-//            ResponseHead head = new ResponseHead();
-//            //前端传输的数据不为空则调用service层
-//            head.setEncryption(0);
-//            head.setCode("0");
-//            if (result > 0){
-//                head.setMessage("增加成功");
-//            }else {
-//                head.setMessage("增加失败");
-//            }
-//            response.setResponseHead(head);
-//            return response;
+            int result = 0;
+            try {
+                result = subjectService.add(subjectDTO);
+            } catch (ServiceException serviceException) {
+                throw new BusinessException(serviceException);
+            }
+            //返回前端的CommonResponse
+            CommonResponse<String> response = new CommonResponse<>();
+            //返回前端的ResponseHead
+            ResponseHead head = new ResponseHead();
+            //前端传输的数据不为空则调用service层
+            head.setEncryption(0);
+            head.setCode("0");
+            if (result > 0){
+                head.setMessage("增加成功");
+            }else {
+                head.setMessage("增加失败");
+            }
+            response.setResponseHead(head);
+            return response;
         }
         return null;
     }

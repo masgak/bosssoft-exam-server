@@ -5,9 +5,11 @@ import com.bosssoft.bes.userpermission.dao.SubjectAnswerDao;
 import com.bosssoft.bes.userpermission.pojo.dto.SubjectAnswerDTO;
 import com.bosssoft.bes.userpermission.service.SubjectAnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class SubjectAnswerServiceImpl implements SubjectAnswerService {
 
     @Autowired
