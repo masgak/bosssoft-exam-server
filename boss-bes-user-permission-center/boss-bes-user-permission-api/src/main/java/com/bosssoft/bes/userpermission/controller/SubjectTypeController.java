@@ -15,6 +15,7 @@ import com.bosssoft.bes.userpermission.pojo.vo.SubjectTypeQueryConditionVO;
 import com.bosssoft.bes.userpermission.service.SubjectTypeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
@@ -120,7 +121,6 @@ public class SubjectTypeController {
 			SubjectTypeDataItemVO subjectTypeDataItemVO = commonRequest.getBody();
 			SubjectTypeDTO subjectTypeDTO = new SubjectTypeDTO();
 			BeanUtils.copyProperties(subjectTypeDataItemVO, subjectTypeDTO);
-			System.out.println("DTO为"+subjectTypeDTO);
 			int result = 0;
 			try {
 				result = subjectTypeService.update(subjectTypeDTO);
@@ -171,8 +171,15 @@ public class SubjectTypeController {
 	@CrossOrigin
 	@PostMapping("api/querySubjectType")
 	@ApiLog
-	public CommonResponse<String> query(@RequestBody CommonRequest<SubjectTypeQueryConditionVO> commonRequest) {
-		System.out.println(commonRequest.getBody());
+	public List<SubjectTypeDTO> query(@RequestBody CommonRequest<SubjectTypeQueryConditionVO> commonRequest) {
+		//System.out.println(commonRequest.getBody());
+		SubjectTypeQueryConditionVO vo=commonRequest.getBody();
+		if(vo!=null){
+			SubjectTypeDTO dto=new SubjectTypeDTO();
+			BeanUtils.copyProperties(vo,dto);
+			List<SubjectTypeDTO> list=subjectTypeService.queryByCondition(dto);
+			return list;
+		}
 		return null;
 	}
 

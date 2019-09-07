@@ -27,7 +27,11 @@ public class CategoryDataItemVO extends DataItemVO {
 	 */
 	protected String remark;
 
-
+	/**
+	 * 父类别ID
+	 * 增加需要根据前端返回的父类别增加
+	 */
+	protected long parentId;
 
 	public String getName() {
 		return name;
@@ -53,6 +57,14 @@ public class CategoryDataItemVO extends DataItemVO {
 		this.remark = remark;
 	}
 
+	public long getParentId() {
+		return parentId;
+	}
+
+	public void setParentId(long parentId) {
+		this.parentId = parentId;
+	}
+
 	@Override
 	public String toString() {
 		return "CategoryDataItemVO{" +
@@ -60,6 +72,7 @@ public class CategoryDataItemVO extends DataItemVO {
 				", status=" + status +
 				", remark='" + remark + '\'' +
 				", id=" + id +
+				", parentId="+parentId+
 				'}';
 	}
 }

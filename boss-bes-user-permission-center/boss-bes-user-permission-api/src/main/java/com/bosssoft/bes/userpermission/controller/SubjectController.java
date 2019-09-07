@@ -89,38 +89,41 @@ public class SubjectController{
             //将题目VO转为DTO
             SubjectDTO subjectDTO = new SubjectDTO();
             BeanUtils.copyProperties(subjectDataItemVO,subjectDTO);
+            System.out.println(subjectDTO);
             //为题目DTO赋予ID用于传给答案DTO
             SnowFlake snowFlake = new SnowFlake(2,3);
             subjectDTO.setId(snowFlake.nextId());
+			int result = 0;
+			try {
+				result = subjectService.add(subjectDTO);
+			} catch (ServiceException serviceException) {
+				throw new BusinessException(serviceException);
+			}
+
             //将传输信息中的answer信息存入answerdto中
             List<SubjectAnswerDTO> subjectAnswerDTOs = subjectDataItemVO.getSubjectAnswers();
             SubjectAnswerDTO subjectAnswerDTO = null;
             for (SubjectAnswerDTO dto:subjectAnswerDTOs){
+                //将题目ID存入答案中
+                dto.setSubjectId(subjectDTO.getId());
                 //将题目答案DTO存入数据库中
-                dto.setSubjectID(subjectDTO.getId());
-                System.out.println("答案数据为"+dto.toString());
                 subjectAnswerService.add(dto);
             }
-            int result = 0;
-            try {
-                result = subjectService.add(subjectDTO);
-            } catch (ServiceException serviceException) {
-                throw new BusinessException(serviceException);
-            }
-            //返回前端的CommonResponse
-            CommonResponse<String> response = new CommonResponse<>();
-            //返回前端的ResponseHead
-            ResponseHead head = new ResponseHead();
-            //前端传输的数据不为空则调用service层
-            head.setEncryption(0);
-            head.setCode("0");
-            if (result > 0){
-                head.setMessage("增加成功");
-            }else {
-                head.setMessage("增加失败");
-            }
-            response.setResponseHead(head);
-            return response;
+
+           //返回前端的CommonResponse
+           CommonResponse<String> response = new CommonResponse<>();
+           //返回前端的ResponseHead
+           ResponseHead head = new ResponseHead();
+           //前端传输的数据不为空则调用service层
+           head.setEncryption(0);
+           head.setCode("0");
+           if (result > 0){
+               head.setMessage("增加成功");
+           }else {
+               head.setMessage("增加失败");
+           }
+           response.setResponseHead(head);
+           return response;
         }
         return null;
     }

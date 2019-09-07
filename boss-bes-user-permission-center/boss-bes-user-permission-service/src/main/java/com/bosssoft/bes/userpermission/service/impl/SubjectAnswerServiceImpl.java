@@ -19,7 +19,7 @@ public class SubjectAnswerServiceImpl implements SubjectAnswerService {
         if (subjectAnswerDTO != null){
             //由雪花算法生成相关id
             SnowFlake snowFlake = new SnowFlake(2,3);
-            subjectAnswerDTO.setID(snowFlake.nextId());
+            subjectAnswerDTO.setId(snowFlake.nextId());
             try {
                 subjectAnswerDao.insert(subjectAnswerDTO);
                 return 1;

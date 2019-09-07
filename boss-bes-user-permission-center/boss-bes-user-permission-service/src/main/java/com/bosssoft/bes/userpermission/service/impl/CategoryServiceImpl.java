@@ -4,8 +4,10 @@ import com.bosssoft.bes.base.utils.DateUtils;
 import com.bosssoft.bes.base.utils.SnowFlake;
 import com.bosssoft.bes.userpermission.dao.CategoryDao;
 import com.bosssoft.bes.userpermission.pojo.dto.CategoryDTO;
+import com.bosssoft.bes.userpermission.pojo.dto.CategoryTreeDTO;
 import com.bosssoft.bes.userpermission.pojo.entity.Category;
 import com.bosssoft.bes.userpermission.service.CategoryService;
+import org.apache.poi.ss.formula.functions.T;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -14,9 +16,7 @@ import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Condition;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author : huangyuhui
@@ -115,6 +115,12 @@ public class CategoryServiceImpl implements CategoryService {
 		if(!StringUtils.isEmpty(categoryDTO.getName())){
 			criteria.andLike("name","%"+categoryDTO.getName()+"%");
 		}
+		if(categoryDTO.getParentId()!=null){
+			criteria.andEqualTo("parentId",categoryDTO.getParentId());
+		}
+		if(categoryDTO.getId()!=null){
+			criteria.andEqualTo("id",categoryDTO.getId());
+		}
 		List<Category> categories=categoryDao.selectByExample(condition);
 		List<CategoryDTO> dtos=null;
 		CategoryDTO dto=null;
@@ -148,4 +154,52 @@ public class CategoryServiceImpl implements CategoryService {
 		}
 		return dtos;
 	}
+
+	public List<CategoryTreeDTO> getTree(){
+		List<Category> categories=categoryDao.selectAll();
+		//实体List转化为dto的list,后面处理的对象都是dto
+		List<CategoryTreeDTO> categoryNodes=new ArrayList<CategoryTreeDTO>(categories.size());
+		//存放顶层节点（结果集）
+		List<CategoryTreeDTO> resultList=new ArrayList<CategoryTreeDTO>();
+
+		//存放所有数据，方便根据id查找，不用多次查询数据库
+		Map<Object,Object> treeMap=new HashMap<Object,Object>();
+
+		CategoryTreeDTO categoryTreeDTO=null;
+
+		int i;
+		for(i=0;i<categories.size();i++){
+			//取实体对象转化为dto对象
+			Category item=categories.get(i);
+			categoryTreeDTO=new CategoryTreeDTO();
+			BeanUtils.copyProperties(item,categoryTreeDTO);
+			//放入dto的List
+			categoryNodes.add(categoryTreeDTO);
+			//放入Map
+			treeMap.put(categoryTreeDTO.getId(),categoryTreeDTO);
+		}
+
+		for( i=0;i<categoryNodes.size();i++){
+			//以元素的父id为键，在map里取值，若取不到则，对应的元素不存在，即没有父节点，为顶层节点或游离节点，加入resultList
+			if(!treeMap.containsKey(categoryNodes.get(i).getParentId())){
+				resultList.add(categoryNodes.get(i));
+			}
+		}
+
+		for(i=0;i<categoryNodes.size();i++){
+			//对于某个元素，查找其父节点
+			CategoryTreeDTO category=(CategoryTreeDTO) treeMap.get(categoryNodes.get(i).getParentId());
+			if(category!=null){
+				//不是叶子节点
+				category.setLeaf((byte) 0);
+				if(category.getChildList()==null){
+					category.setChildList(new ArrayList<CategoryTreeDTO>());
+				}
+				//把该元素加入其父节点的子节点列表
+				category.getChildList().add(categoryNodes.get(i));
+			}
+		}
+		return resultList;
+	}
+
 }
