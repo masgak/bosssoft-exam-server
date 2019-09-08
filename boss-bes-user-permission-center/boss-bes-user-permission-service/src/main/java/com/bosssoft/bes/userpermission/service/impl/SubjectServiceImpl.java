@@ -39,8 +39,8 @@ public class SubjectServiceImpl implements SubjectService {
             subjectDTO.setCreatedTime(createTime);
             subjectDTO.setUpdatedTime(updateTime);
             //插入创建者以及更新者，后续从redis中获取登录信息
-            subjectDTO.setCreatedBy((long)9527);
-            subjectDTO.setUpdatedBy((long)9527);
+            subjectDTO.setCreatedBy((long)9600);
+            subjectDTO.setUpdatedBy((long)9600);
             //插入当前版本
             subjectDTO.setVersion((long)1.0);
             System.out.println("插入的DTO:"+subjectDTO.toString());
@@ -70,7 +70,15 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     public int update(SubjectDTO subjectDTO) {
-        return 0;
+        Long dbVersion = subjectDao.selectByPrimaryKey(subjectDTO.getId()).getVersion();
+        //对比版本号，不同则抛出异常
+//        if (!dictionaryDTO.getVersion().equals(dbVersion)){
+//            throw new Exception();
+//        }
+        Subject subject = new Subject();
+        subject.setUpdatedTime(DateUtils.getDate());
+        BeanUtils.copyProperties(subjectDTO,subject);
+        return subjectDao.updateByPrimaryKeySelective(subject);
     }
 
     public SubjectDTO getByPrimaryKey(Long id) {
@@ -78,26 +86,8 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     public List<SubjectDTO> queryByCondition(SubjectDTO subjectDTO)  {
-        Condition condition = new Condition(Subject.class);
-        Example.Criteria criteria = condition.createCriteria();
-        if (!StringUtils.isEmpty(subjectDTO.getName())){
-            criteria.andLike("name","%"+subjectDTO.getName()+"%");
-        }
-        List<Subject> results = subjectDao.selectByExample(condition);
-        List<SubjectDTO> dtos = null;
-        SubjectDTO dto = null;
-        if (results != null) {
-            dtos = new ArrayList<SubjectDTO>(results.size());
-            for (Subject result : results){
-                //此处new的做法有待商讨……
-                dto = new SubjectDTO();
-                BeanUtils.copyProperties(result, dto);
-                dtos.add(dto);
-            }
-        } else {
-            dtos = new ArrayList<SubjectDTO>();
-        }
-        return dtos;
+        List<SubjectDTO> dto = subjectDao.queryByCondition(subjectDTO.getCategoryId(), subjectDTO.getSubjectTypeId(),subjectDTO.getName());
+        return dto;
     }
 
     public List<SubjectDTO> queryAll() {

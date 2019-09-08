@@ -146,7 +146,52 @@ public class SubjectController{
 
     @GlobalExceptionLog
     @CrossOrigin
-    @PostMapping("api/subject/updateSubject")
+    @PostMapping("api/querySubject")
+    public List<SubjectDTO> query(@RequestBody CommonRequest<SubjectQueryConditionVO> commonRequest) {
+        SubjectQueryConditionVO vo=commonRequest.getBody();
+        if(vo!=null){
+            SubjectDTO dto=new SubjectDTO();
+            BeanUtils.copyProperties(vo,dto);
+            System.out.println(dto);
+            List<SubjectDTO> list=subjectService.queryByCondition(dto);
+            System.out.println("查询到的DTO为"+list.toString());
+            return list;
+        }
+        return null;
+    }
+
+//    @GlobalExceptionLog
+//    @CrossOrigin
+//    @PostMapping("api/querySubject")
+//    public CommonResponse<String> query(@RequestBody CommonRequest<SubjectQueryConditionVO> commonRequest) {
+//        //返回前端的CommonResponse,查询的VO应放在response.body中
+//        CommonResponse<String> response = new CommonResponse<>();
+//        //前端传输的数据不为空则调用service层
+//        if (commonRequest.getBody() != null) {
+//            SubjectQueryConditionVO subjectQueryConditionVO = commonRequest.getBody();
+//            System.out.println("查询VO数据为"+subjectQueryConditionVO);
+//            //将查询VO转为DTO
+//            SubjectDTO subjectDTO = new SubjectDTO();
+//            BeanUtils.copyProperties(subjectQueryConditionVO,subjectDTO);
+//            System.out.println("DTO接收到的数据为"+subjectDTO);
+//            try{
+//                subjectService.queryByCondition(subjectDTO);
+//            }catch (ServiceException serviceException){
+//                throw new BusinessException(serviceException);
+//            }
+//            //返回前端的ResponseHead
+//            ResponseHead head = new ResponseHead();
+//            //前端传输的数据不为空则调用service层
+//            head.setEncryption(0);
+//            head.setCode("0");
+//            return response;
+//        }
+//        return null;
+//    }
+
+    @GlobalExceptionLog
+    @CrossOrigin
+    @PostMapping("api/updateSubject")
     public CommonResponse<String> update(@RequestBody CommonRequest<SubjectDataItemVO> commonRequest) {
         //前端传输的数据不为空则调用service层
         if (commonRequest.getBody() != null){
@@ -198,14 +243,6 @@ public class SubjectController{
         }catch (ServiceException serviceException){
             throw new BusinessException(serviceException);
         }
-    }
-
-    @GlobalExceptionLog
-    @CrossOrigin
-    @PostMapping("api/subject/querySubject")
-    public CommonResponse<String> query(@RequestBody CommonRequest<SubjectQueryConditionVO> commonRequest) {
-        System.out.println(commonRequest.getBody());
-        return null;
     }
 
 

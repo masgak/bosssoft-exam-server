@@ -11,30 +11,30 @@ public class SubjectQueryConditionVO extends QueryConditionVO {
     /**
      * 题目类别
      */
-    private String category;
+    private Long categoryId;
     /**
      * 题型
      */
-    private String subjectType;
+    private Long subjectTypeId;
     /**
      * 题目名称
      */
     private String name;
 
-    public String getCategory() {
-        return category;
+    public Long getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
     }
 
-    public String getSubjectType() {
-        return subjectType;
+    public Long getSubjectTypeId() {
+        return subjectTypeId;
     }
 
-    public void setSubjectType(String subjectType) {
-        this.subjectType = subjectType;
+    public void setSubjectTypeId(Long subjectTypeId) {
+        this.subjectTypeId = subjectTypeId;
     }
 
     public String getName() {
@@ -48,8 +48,8 @@ public class SubjectQueryConditionVO extends QueryConditionVO {
     @Override
     public String toString() {
         return "SubjectQueryConditionVO{" +
-                "category='" + category + '\'' +
-                ", subjectType='" + subjectType + '\'' +
+                "categoryId=" + categoryId +
+                ", subjectTypeId=" + subjectTypeId +
                 ", name='" + name + '\'' +
                 '}';
     }

@@ -2,6 +2,7 @@ package com.bosssoft.bes.userpermission.dao;
 
 import com.bosssoft.bes.userpermission.pojo.dto.SubjectDTO;
 import com.bosssoft.bes.userpermission.pojo.entity.Subject;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;
@@ -19,5 +20,8 @@ public interface SubjectDao extends Mapper<Subject>, MySqlMapper<Subject> {
      * @return 题目DTO
      */
     List<SubjectDTO> loadSubjects();
-
+    /**
+     * 题目查询
+     */
+    List<SubjectDTO> queryByCondition(@Param("categoryId")Long categoryId, @Param("subjectTypeId")Long subjectTypeId,@Param("name")String name);
 }
