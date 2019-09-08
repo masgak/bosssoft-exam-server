@@ -1,6 +1,7 @@
 package com.bosssoft.bes.userpermission.service.impl;
 
 import com.bosssoft.bes.base.utils.DateUtils;
+import com.bosssoft.bes.userpermission.dao.SubjectAnswerDao;
 import com.bosssoft.bes.userpermission.dao.SubjectDao;
 import com.bosssoft.bes.userpermission.pojo.dto.SubjectDTO;
 import com.bosssoft.bes.userpermission.pojo.entity.Subject;
@@ -8,6 +9,7 @@ import com.bosssoft.bes.userpermission.service.SubjectService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Condition;
 import tk.mybatis.mapper.entity.Example;
@@ -26,6 +28,9 @@ public class SubjectServiceImpl implements SubjectService {
     @Autowired
     private SubjectDao subjectDao;
 
+    @Autowired
+    private SubjectAnswerDao subjectAnswerDao;
+
     public int add(SubjectDTO subjectDTO) {
        if (subjectDTO != null){
             //插入生成时间以及更新时间，第一次创建时两者相同
@@ -38,6 +43,7 @@ public class SubjectServiceImpl implements SubjectService {
             subjectDTO.setUpdatedBy((long)9527);
             //插入当前版本
             subjectDTO.setVersion((long)1.0);
+            System.out.println("插入的DTO:"+subjectDTO.toString());
             try {
                 subjectDao.insert(subjectDTO);
                 return 1;
@@ -50,7 +56,16 @@ public class SubjectServiceImpl implements SubjectService {
         }
     }
 
+    @Transactional(rollbackFor = Exception.class)
     public int delete(List<SubjectDTO> subjectDTOS) {
+        SubjectDTO subjectDTO = new SubjectDTO();
+        if (subjectDTOS != null){
+            for(SubjectDTO attribute : subjectDTOS) {
+                subjectDTO = attribute;
+                System.out.println("删除的参数为"+subjectDTO);
+                subjectDao.delete(subjectDTO);
+            }
+        }
         return 0;
     }
 

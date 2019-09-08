@@ -40,24 +40,38 @@ public class SubjectController{
 
     @GlobalExceptionLog
     @CrossOrigin
-    @PostMapping("api/subject/delete")
+    @PostMapping("api/deleteSubjects")
     public CommonResponse<String> delete(@RequestBody CommonRequest<List<SubjectDataItemVO>> commonRequest  ) {
         //将前端传的数据转为list
         List<SubjectDataItemVO> voList = commonRequest.getBody();
         System.out.println(commonRequest.getBody().toString());
         //前端传输的数据不为空则调用service层
         if (voList != null && voList.size()> 0){
-            List<SubjectDTO> dtoList = new ArrayList<>(voList.size());
+            List<SubjectDTO> subjectDTOList = new ArrayList<>(voList.size());
+            List<SubjectAnswerDTO> subjectAnswerDTOS = new ArrayList<>();
+            //记录题目答案ID列表
+            List<SubjectAnswerDTO> answerIdList = new ArrayList<>();
+
             SubjectDTO subjectDTO = null;
             //将vo转为dto后，将dto存入dto列表
             for (SubjectDataItemVO vo:voList){
                 subjectDTO = new SubjectDTO();
                 BeanUtils.copyProperties(vo,subjectDTO);
-                dtoList.add(subjectDTO);
+                subjectDTOList.add(subjectDTO);
+                answerIdList = subjectAnswerService.queryAnswerId(subjectDTO.getId());
+                subjectAnswerDTOS.addAll(answerIdList);
             }
-            int result = 0;
+            //删除计数器
+            int answerResult = 0;
             try {
-                result = subjectService.delete(dtoList);
+                answerResult = subjectAnswerService.delete(subjectAnswerDTOS);
+            }catch (ServiceException serviceException){
+                throw new BusinessException(serviceException);
+            }
+
+            int subjectResult = 0;
+            try {
+                subjectResult = subjectService.delete(subjectDTOList);
             }catch (ServiceException serviceException){
                 throw new BusinessException(serviceException);
             }
@@ -65,13 +79,12 @@ public class SubjectController{
             CommonResponse<String> response = new CommonResponse<>();
             //返回前端的ResponseHead
             ResponseHead head = new ResponseHead();
-            head.setEncryption(0);
             head.setCode("0");
             //在相应头中插入提示信息
-            if (result>0){
-                head.setMessage("删除成功");
+            if (subjectResult>0){
+                head.setMessage("题目删除成功");
             }else {
-                head.setMessage("删除失败");
+                head.setMessage("题目删除失败");
             }
             response.setResponseHead(head);
             return response;
@@ -86,10 +99,11 @@ public class SubjectController{
         //传输数据不为空进入service层
         if (commonRequest.getBody() != null){
             SubjectDataItemVO subjectDataItemVO = commonRequest.getBody();
+            System.out.println("VO接收的数据为"+subjectDataItemVO);
             //将题目VO转为DTO
             SubjectDTO subjectDTO = new SubjectDTO();
             BeanUtils.copyProperties(subjectDataItemVO,subjectDTO);
-            System.out.println(subjectDTO);
+            System.out.println("DTO接收到的数据为"+subjectDTO);
             //为题目DTO赋予ID用于传给答案DTO
             SnowFlake snowFlake = new SnowFlake(2,3);
             subjectDTO.setId(snowFlake.nextId());
@@ -102,14 +116,16 @@ public class SubjectController{
 
             //将传输信息中的answer信息存入answerdto中
             List<SubjectAnswerDTO> subjectAnswerDTOs = subjectDataItemVO.getSubjectAnswers();
-            SubjectAnswerDTO subjectAnswerDTO = null;
-            for (SubjectAnswerDTO dto:subjectAnswerDTOs){
-                //将题目ID存入答案中
-                dto.setSubjectId(subjectDTO.getId());
-                //将题目答案DTO存入数据库中
-                subjectAnswerService.add(dto);
+			//判断该题目是否有答案
+			if(subjectAnswerDTOs!=null){
+                SubjectAnswerDTO subjectAnswerDTO = null;
+                for (SubjectAnswerDTO dto:subjectAnswerDTOs){
+                    //将题目ID存入答案中
+                    dto.setSubjectId(subjectDTO.getId());
+                    //将题目答案DTO存入数据库中
+                    subjectAnswerService.add(dto);
+                }
             }
-
            //返回前端的CommonResponse
            CommonResponse<String> response = new CommonResponse<>();
            //返回前端的ResponseHead
@@ -118,9 +134,9 @@ public class SubjectController{
            head.setEncryption(0);
            head.setCode("0");
            if (result > 0){
-               head.setMessage("增加成功");
+               head.setMessage("题目增加成功");
            }else {
-               head.setMessage("增加失败");
+               head.setMessage("题目增加失败");
            }
            response.setResponseHead(head);
            return response;

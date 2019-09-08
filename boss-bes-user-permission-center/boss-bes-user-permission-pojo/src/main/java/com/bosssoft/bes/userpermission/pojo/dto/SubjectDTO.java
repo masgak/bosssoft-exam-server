@@ -10,43 +10,54 @@ public class SubjectDTO extends Subject {
     public SubjectDTO(){
     }
 
-    private long category;
-    private long subjectType;
-    private int subjectDifficulty;
+    /**
+     * 题目分类
+     */
+    private String category;
+    /**
+     * 题目类型
+     */
+    private String subjectType;
+    /**
+     * 题目难度
+     */
+    private String subjectDifficulty;
 
-
-    public long getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(long category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 
-    public long getSubjectType() {
+    public String getSubjectType() {
         return subjectType;
     }
 
-    public void setSubjectType(long subjectType) {
+    public void setSubjectType(String subjectType) {
         this.subjectType = subjectType;
     }
 
-    public int getSubjectDifficulty() {
+    public String getSubjectDifficulty() {
         return subjectDifficulty;
     }
 
-    public void setSubjectDifficulty(int subjectDifficulty) {
+    public void setSubjectDifficulty(String subjectDifficulty) {
         this.subjectDifficulty = subjectDifficulty;
     }
 
     @Override
     public String toString() {
         return "SubjectDTO{" +
-                "category=" + category +
-                ", subjectType=" + subjectType +
-                ", subjectDifficulty=" + subjectDifficulty +
+                "category='" + category + '\'' +
+                ", subjectType='" + subjectType + '\'' +
+                ", subjectDifficulty='" + subjectDifficulty + '\'' +
                 ", name='" + name + '\'' +
                 ", status=" + status +
+                ", categoryId=" + categoryId +
+                ", subjectTypeId=" + subjectTypeId +
+                ", difficulty=" + difficulty +
                 ", id=" + id +
                 ", createdBy=" + createdBy +
                 ", createdTime=" + createdTime +

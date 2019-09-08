@@ -33,6 +33,14 @@ public class SubjectAnswerServiceImpl implements SubjectAnswerService {
     }
 
     public int delete(List<SubjectAnswerDTO> subjectAnswerDTOS) {
+        SubjectAnswerDTO subjectAnswerDTO = new SubjectAnswerDTO();
+        if (subjectAnswerDTOS != null){
+            for(SubjectAnswerDTO attribute : subjectAnswerDTOS) {
+                subjectAnswerDTO = attribute;
+                System.out.println("删除的参数为"+subjectAnswerDTO);
+                subjectAnswerDao.delete(subjectAnswerDTO);
+            }
+        }
         return 0;
     }
 
@@ -50,5 +58,11 @@ public class SubjectAnswerServiceImpl implements SubjectAnswerService {
 
     public List<SubjectAnswerDTO> queryAll() {
         return null;
+    }
+
+    public List<SubjectAnswerDTO> queryAnswerId(Long subjectId) {
+        List<SubjectAnswerDTO> results = subjectAnswerDao.queryAnswerId(subjectId);
+        System.out.println(results);
+        return results;
     }
 }

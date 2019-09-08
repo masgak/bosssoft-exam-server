@@ -25,6 +25,18 @@ public class Subject extends BaseEntity implements Serializable {
      * 状态位
      */
     protected Byte status;
+    /**
+     * 题目类型ID
+     */
+    protected Long categoryId;
+    /**
+     * 题型ID
+     */
+    protected Long subjectTypeId;
+    /**
+     * 题目难度
+     */
+    protected Long difficulty;
 
     public String getName() {
         return name;
@@ -40,5 +52,29 @@ public class Subject extends BaseEntity implements Serializable {
 
     public void setStatus(Byte status) {
         this.status = status;
+    }
+
+    public Long getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public Long getSubjectTypeId() {
+        return subjectTypeId;
+    }
+
+    public void setSubjectTypeId(Long subjectTypeId) {
+        this.subjectTypeId = subjectTypeId;
+    }
+
+    public Long getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(Long difficulty) {
+        this.difficulty = difficulty;
     }
 }

@@ -11,15 +11,15 @@ public class SubjectQueryConditionVO extends QueryConditionVO {
     /**
      * 题目类别
      */
-    protected String category;
+    private String category;
     /**
      * 题型
      */
-    protected String subjectType;
+    private String subjectType;
     /**
      * 题目名称
      */
-    protected String name;
+    private String name;
 
     public String getCategory() {
         return category;

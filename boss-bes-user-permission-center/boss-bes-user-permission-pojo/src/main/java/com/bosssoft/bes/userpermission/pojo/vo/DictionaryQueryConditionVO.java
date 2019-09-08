@@ -11,15 +11,15 @@ public class DictionaryQueryConditionVO extends QueryConditionVO {
     /**
      * 数据字典名称
      */
-    protected String name;
+    private String name;
     /**
      * 数据字典类别
      */
-    protected String category;
+    private String category;
     /**
      * 启用标记
      */
-    protected Byte status;
+    private Byte status;
 
     public String getName() {
         return name;

@@ -11,25 +11,28 @@ public class SubjectDataListVO extends DataListVO {
     /**
      * 题目名称
      */
-    protected String name;
+    private String name;
     /**
      * 题目类别
      */
-    protected String category;
+    private String category;
     /**
      * 题型
      */
-    protected String subjectType;
-
+    private String subjectType;
+    /**
+     * 题目难度
+     */
+    private Long difficulty;
     /**
      * 更新时间
      */
-    protected String updateTime;
+    private String updateTime;
 
     /**
      * 状态位
      */
-    protected Byte status;
+    private Byte status;
 
     public String getName() {
         return name;
@@ -69,5 +72,13 @@ public class SubjectDataListVO extends DataListVO {
 
     public void setStatus(Byte status) {
         this.status = status;
+    }
+
+    public Long getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(Long difficulty) {
+        this.difficulty = difficulty;
     }
 }

@@ -11,11 +11,11 @@ public class DictionaryDataListVO extends DataListVO {
     /**
      * 数据字典名称
      */
-    protected String name;
+    private String name;
     /**
      * 数据字典类别
      */
-    protected String category;
+    private String category;
 
     public String getName() {
         return name;

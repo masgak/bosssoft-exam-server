@@ -5,9 +5,11 @@
 <mapper namespace="com.bosssoft.bes.userpermission.dao.SubjectDao">
 
     <select id="loadSubjects" resultType="com.bosssoft.bes.userpermission.pojo.dto.SubjectDTO">
-        SELECT s.id, s.`name`, s.`status`,  s.`updated_time` AS updatedTime,
-        t.`name` AS subjectType, c.`name` AS category
-        FROM t_subject s, t_subject_type t, t_category c
+        SELECT s.id, s.`name`, s.`status`, s.`category_id` AS categoryId, s.`subject_type_id`
+        AS subjectTypeId, s.`difficulty`, s.`updated_time` AS updatedTime,
+        t.`name` AS subjectType, c.`name` AS category, d.`value` AS subjectDifficulty
+        FROM t_subject s, t_subject_type t, t_category c, t_dictionary d
         WHERE s.`category_id`=c.`id` AND s.`subject_type_id`=t.`id` and s.status = 1
+        and s.`difficulty` = d.`id`
     </select>
 </mapper>

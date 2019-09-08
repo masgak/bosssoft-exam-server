@@ -15,52 +15,52 @@ public class SubjectDataItemVO extends DataItemVO {
     /**
      * 题目类别
      */
-    protected long category;
+    private Long categoryId;
     /**
      * 题型
      */
-    protected long subjectType;
+    private Long subjectTypeId;
     /**
      * 题目难度
      */
-    protected int subjectDifficulty;
+    private Long difficulty;
     /**
      * 题目名称
      */
-    protected String name;
+    private String name;
 
     /**
      *题目ID
      */
-    protected List<SubjectAnswerDTO> subjectAnswers;
+    private List<SubjectAnswerDTO> subjectAnswers;
 
     /**
      * 状态位
      */
-    protected Byte status;
+    private Byte status;
 
-    public long getCategory() {
-        return category;
+    public Long getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategory(long category) {
-        this.category = category;
+    public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
     }
 
-    public long getSubjectType() {
-        return subjectType;
+    public Long getSubjectTypeId() {
+        return subjectTypeId;
     }
 
-    public void setSubjectType(long subjectType) {
-        this.subjectType = subjectType;
+    public void setSubjectTypeId(Long subjectTypeId) {
+        this.subjectTypeId = subjectTypeId;
     }
 
-    public int getSubjectDifficulty() {
-        return subjectDifficulty;
+    public Long getDifficulty() {
+        return difficulty;
     }
 
-    public void setSubjectDifficulty(int subjectDifficulty) {
-        this.subjectDifficulty = subjectDifficulty;
+    public void setDifficulty(Long difficulty) {
+        this.difficulty = difficulty;
     }
 
     public String getName() {
@@ -91,9 +91,9 @@ public class SubjectDataItemVO extends DataItemVO {
     @Override
     public String toString() {
         return "SubjectDataItemVO{" +
-                "category='" + category + '\'' +
-                ", subjectType='" + subjectType + '\'' +
-                ", subjectDifficulty='" + subjectDifficulty + '\'' +
+                "categoryId=" + categoryId +
+                ", subjectTypeId=" + subjectTypeId +
+                ", difficulty=" + difficulty +
                 ", name='" + name + '\'' +
                 ", subjectAnswers=" + subjectAnswers +
                 ", status=" + status +

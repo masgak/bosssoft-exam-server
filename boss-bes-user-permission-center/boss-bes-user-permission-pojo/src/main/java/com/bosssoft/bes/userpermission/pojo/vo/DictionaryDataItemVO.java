@@ -11,23 +11,23 @@ public class DictionaryDataItemVO extends DataItemVO {
     /**
      * 数据字典名称
      */
-    protected String name;
+    private String name;
     /**
      * 数据字典类别
      */
-    protected String category;
+    private String category;
     /**
      * 数据字典值
      */
-    protected String value;
+    private String value;
     /**
      * 状态位
      */
-    protected Byte status;
+    private Byte status;
     /**
      * 备注
      */
-    protected String remark;
+    private String remark;
 
     public DictionaryDataItemVO() {
     }

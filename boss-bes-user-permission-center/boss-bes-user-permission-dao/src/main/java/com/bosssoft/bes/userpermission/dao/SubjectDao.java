@@ -14,5 +14,10 @@ import java.util.List;
  */
 @Repository
 public interface SubjectDao extends Mapper<Subject>, MySqlMapper<Subject> {
+    /**
+     * 加载题目数据
+     * @return 题目DTO
+     */
     List<SubjectDTO> loadSubjects();
+
 }
