@@ -1,5 +1,6 @@
 package com.bosssoft.bes.userpermission.service.impl;
 
+import com.bosssoft.bes.base.utils.DateUtils;
 import com.bosssoft.bes.userpermission.dao.CombExamDao;
 import com.bosssoft.bes.userpermission.dao.CombExamItemDao;
 import com.bosssoft.bes.userpermission.pojo.dto.CombExamDTO;
@@ -45,7 +46,15 @@ public class CombExamServiceImpl implements CombExamService {
     }
 
     public int update(CombExamDTO combExamDTO) {
-        return 0;
+        Long dbVersion = combExamDao.selectByPrimaryKey(combExamDTO.getId()).getVersion();
+        //对比版本号，不同则抛出异常
+//        if (!dictionaryDTO.getVersion().equals(dbVersion)){
+//            throw new Exception();
+//        }
+        CombExam combExam = new CombExam();
+        combExam.setUpdatedTime(DateUtils.getDate());
+        BeanUtils.copyProperties(combExamDTO,combExam);
+        return combExamDao.updateByPrimaryKeySelective(combExam);
     }
 
     public CombExamDTO getByPrimaryKey(Long id) {

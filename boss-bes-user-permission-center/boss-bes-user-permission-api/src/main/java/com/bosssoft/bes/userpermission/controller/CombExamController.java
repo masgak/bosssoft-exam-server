@@ -96,4 +96,40 @@ public class CombExamController {
         }
         return null;
     }
+
+    @GlobalExceptionLog
+    @CrossOrigin
+    @PostMapping("api/updateCombExam")
+    public CommonResponse<String> update(@RequestBody CommonRequest<CombExamDTO> commonRequest  ) {
+        //传输数据不为空进入service层
+        if (commonRequest.getBody() != null){
+//            CombExamItemDTO subjectDataItemVO = commonRequest.getBody();
+//            System.out.println("VO接收的数据为"+subjectDataItemVO);
+            //将VO转为DTO
+            CombExamDTO combExamDTO = commonRequest.getBody();
+            System.out.println("更新DTO为"+combExamDTO.toString());
+            int result = 0;
+            try {
+                result = combExamService.update(combExamDTO);
+            } catch (ServiceException serviceException) {
+                throw new BusinessException(serviceException);
+            }
+            //返回前端的CommonResponse
+            CommonResponse<String> response = new CommonResponse<>();
+            //返回的ResponseHead
+            ResponseHead head = new ResponseHead();
+            //前端传输的数据不为空则调用service层
+            head.setMessage("ss");
+            head.setEncryption(0);
+            head.setCode("0");
+            if (result > 0){
+                head.setMessage("配置项更新成功");
+            }else {
+                head.setMessage("配置项更新失败");
+            }
+            response.setResponseHead(head);
+            return response;
+        }
+        return null;
+    }
 }
