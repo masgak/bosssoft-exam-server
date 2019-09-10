@@ -16,12 +16,19 @@ public interface BaseService<DTO> {
     int add(DTO dto) ;
 
     /**
-     * 根据删除记录
+     * 根据删除多条记录
      * @param dtos
      * @return
      * @throws Exception
      */
     int delete(List<DTO> dtos);
+
+    /**
+     * 删除单条记录
+     * @param dto
+     * @return
+     */
+    int delete(DTO dto);
 
     /**
      * 更新记录

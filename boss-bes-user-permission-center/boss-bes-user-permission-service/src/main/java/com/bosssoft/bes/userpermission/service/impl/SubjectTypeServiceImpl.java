@@ -153,4 +153,8 @@ public class SubjectTypeServiceImpl implements SubjectTypeService {
 		//System.out.println("返回的dto是"+subjectTypes.toString());
 		return dtos;
 	}
+
+	public int delete(SubjectTypeDTO subjectTypeDTO) {
+		return 0;
+	}
 }

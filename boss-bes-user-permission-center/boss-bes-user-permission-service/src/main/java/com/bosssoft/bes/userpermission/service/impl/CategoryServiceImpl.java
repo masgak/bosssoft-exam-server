@@ -202,4 +202,7 @@ public class CategoryServiceImpl implements CategoryService {
 		return resultList;
 	}
 
+	public int delete(CategoryDTO categoryDTO) {
+		return 0;
+	}
 }

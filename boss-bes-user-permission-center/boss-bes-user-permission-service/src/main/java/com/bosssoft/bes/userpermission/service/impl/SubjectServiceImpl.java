@@ -95,4 +95,8 @@ public class SubjectServiceImpl implements SubjectService {
         System.out.println(results);
         return results;
     }
+
+    public int delete(SubjectDTO subjectDTO) {
+        return 0;
+    }
 }

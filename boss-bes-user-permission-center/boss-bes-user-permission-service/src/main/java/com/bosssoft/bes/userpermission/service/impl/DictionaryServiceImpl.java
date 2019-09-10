@@ -140,4 +140,8 @@ public class DictionaryServiceImpl implements DictionaryService {
         System.out.println("返回的dto是"+dictionaries.toString());
         return dtos;
     }
+
+    public int delete(DictionaryDTO dictionaryDTO) {
+        return 0;
+    }
 }

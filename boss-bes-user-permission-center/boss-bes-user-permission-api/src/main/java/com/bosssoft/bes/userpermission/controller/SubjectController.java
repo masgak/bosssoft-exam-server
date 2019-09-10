@@ -58,6 +58,7 @@ public class SubjectController{
                 subjectDTO = new SubjectDTO();
                 BeanUtils.copyProperties(vo,subjectDTO);
                 subjectDTOList.add(subjectDTO);
+                //获取该题目的所有答案ID，再根据答案ID先删除答案
                 answerIdList = subjectAnswerService.queryAnswerId(subjectDTO.getId());
                 subjectAnswerDTOS.addAll(answerIdList);
             }
