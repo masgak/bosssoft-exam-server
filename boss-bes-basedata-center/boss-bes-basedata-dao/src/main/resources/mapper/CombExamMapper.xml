@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bosssoft.bes.basedata.dao.CombExamDao">
+
+    <sql id="CombExamColumns">
+        s.id AS id,
+        s.`name` AS name,
+        s.`status` AS status,
+        s.`category_id` AS categoryId,
+        s.`subject_type_id` AS subjectTypeId,
+        s.`difficulty` AS difficulty,
+        s.`updated_time` AS updatedTime,
+        t.`name` AS subjectType,
+        c.`name` AS category
+    </sql>
+
+    <select id="loadCombExams" resultType="com.bosssoft.bes.basedata.pojo.dto.CombExamDTO">
+        SELECT
+        <include refid="CombExamColumns"/>
+        ,d.`value` AS subjectDifficulty
+        FROM t_subject s, t_subject_type t, t_category c, t_dictionary d
+        WHERE s.`category_id`=c.`id` AND s.`subject_type_id`=t.`id` and s.status = 1
+        and s.`difficulty` = d.`id`
+    </select>
+
+</mapper>

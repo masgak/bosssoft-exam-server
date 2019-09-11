@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bosssoft.bes.basedata.dao.CombExamItemDao">
+
+    <sql id="CombExamItemColumns">
+        c_item.id AS id,
+        c_item.`num` AS num,
+        c_item.`difficult` AS difficult,
+        c_item.`score` AS score,
+        c_item.`comb_exam_id` AS combExamId,
+        c_item.`category_id` AS categoryId,
+        c_item.`subject_type_id` AS subjectTypeId,
+        s.`name` AS subjectType,
+        c.`name` AS category
+    </sql>
+
+    <select id="queryCombExamItem" resultType="com.bosssoft.bes.basedata.pojo.dto.CombExamItemDTO">
+        SELECT
+        <include refid="CombExamItemColumns"/>
+        FROM t_comb_exam_config_item c_item, t_category c,  t_subject_type s
+        WHERE c_item.comb_exam_id=#{id} AND c_item.category_id=c.id AND c_item.subject_type_id=s.id
+    </select>
+
+    <select id="queryItemId" resultType="com.bosssoft.bes.basedata.pojo.dto.CombExamItemDTO">
+        select t2.id
+        from t_comb_exam_config t1 inner join t_comb_exam_config_item t2 on t1.id=t2.comb_exam_id
+        WHERE t1.id=#{id}
+    </select>
+
+</mapper>
